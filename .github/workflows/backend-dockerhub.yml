@@ -79,3 +79,42 @@ jobs:
           cache-from: type=gha
           cache-to: type=gha,mode=max
 
+  notify-render:
+    needs: build-and-push
+    if: ${{ needs.build-and-push.result == 'success' }}
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Trigger Render deploy hooks (backend)
+        env:
+          RENDER_BACKEND_DEPLOY_HOOK_URL: ${{ secrets.RENDER_BACKEND_DEPLOY_HOOK_URL }}
+          RENDER_AUTHSERVICE_DEPLOY_HOOK_URL: ${{ secrets.RENDER_AUTHSERVICE_DEPLOY_HOOK_URL }}
+          RENDER_CARTSERVICE_DEPLOY_HOOK_URL: ${{ secrets.RENDER_CARTSERVICE_DEPLOY_HOOK_URL }}
+          RENDER_CATALOGSERVICE_DEPLOY_HOOK_URL: ${{ secrets.RENDER_CATALOGSERVICE_DEPLOY_HOOK_URL }}
+          RENDER_ORDERSERVICE_DEPLOY_HOOK_URL: ${{ secrets.RENDER_ORDERSERVICE_DEPLOY_HOOK_URL }}
+          RENDER_PAYMENTSERVICE_DEPLOY_HOOK_URL: ${{ secrets.RENDER_PAYMENTSERVICE_DEPLOY_HOOK_URL }}
+          RENDER_INVENTORYSERVICE_DEPLOY_HOOK_URL: ${{ secrets.RENDER_INVENTORYSERVICE_DEPLOY_HOOK_URL }}
+          RENDER_GATEWAY_DEPLOY_HOOK_URL: ${{ secrets.RENDER_GATEWAY_DEPLOY_HOOK_URL }}
+        run: |
+          HOOKS=()
+
+          [ -n "$RENDER_BACKEND_DEPLOY_HOOK_URL" ] && HOOKS+=("$RENDER_BACKEND_DEPLOY_HOOK_URL")
+          [ -n "$RENDER_AUTHSERVICE_DEPLOY_HOOK_URL" ] && HOOKS+=("$RENDER_AUTHSERVICE_DEPLOY_HOOK_URL")
+          [ -n "$RENDER_CARTSERVICE_DEPLOY_HOOK_URL" ] && HOOKS+=("$RENDER_CARTSERVICE_DEPLOY_HOOK_URL")
+          [ -n "$RENDER_CATALOGSERVICE_DEPLOY_HOOK_URL" ] && HOOKS+=("$RENDER_CATALOGSERVICE_DEPLOY_HOOK_URL")
+          [ -n "$RENDER_ORDERSERVICE_DEPLOY_HOOK_URL" ] && HOOKS+=("$RENDER_ORDERSERVICE_DEPLOY_HOOK_URL")
+          [ -n "$RENDER_PAYMENTSERVICE_DEPLOY_HOOK_URL" ] && HOOKS+=("$RENDER_PAYMENTSERVICE_DEPLOY_HOOK_URL")
+          [ -n "$RENDER_INVENTORYSERVICE_DEPLOY_HOOK_URL" ] && HOOKS+=("$RENDER_INVENTORYSERVICE_DEPLOY_HOOK_URL")
+          [ -n "$RENDER_GATEWAY_DEPLOY_HOOK_URL" ] && HOOKS+=("$RENDER_GATEWAY_DEPLOY_HOOK_URL")
+
+          if [ ${#HOOKS[@]} -eq 0 ]; then
+            echo "No Render backend deploy hooks configured. Skipping notification."
+            exit 0
+          fi
+
+          for hook in "${HOOKS[@]}"; do
+            curl -fsS -X POST "$hook"
+          done
+
+          echo "Render deploy hooks for backend triggered."
+
