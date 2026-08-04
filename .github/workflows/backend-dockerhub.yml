@@ -1,0 +1,81 @@
+name: Backend DockerHub Publish
+
+on:
+  push:
+    branches:
+      - main
+      - master
+    paths:
+      - backend/services/**
+      - backend/node-api-gateway/**
+      - .github/workflows/backend-dockerhub.yml
+  workflow_dispatch:
+
+env:
+  IMAGE_PREFIX: proyecto-muebles
+
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - image_name: authservice
+            context: ./backend/services/AuthService
+            dockerfile: ./backend/services/AuthService/Dockerfile
+          - image_name: cartservice
+            context: ./backend/services/CartService
+            dockerfile: ./backend/services/CartService/Dockerfile
+          - image_name: catalogservice
+            context: ./backend/services/CatalogService
+            dockerfile: ./backend/services/CatalogService/Dockerfile
+          - image_name: orderservice
+            context: ./backend/services/OrderService
+            dockerfile: ./backend/services/OrderService/Dockerfile
+          - image_name: paymentservice
+            context: ./backend/services/PaymentService
+            dockerfile: ./backend/services/PaymentService/Dockerfile
+          - image_name: inventoryservice
+            context: ./backend/services/InventoryService
+            dockerfile: ./backend/services/InventoryService/Dockerfile
+          - image_name: gateway
+            context: ./backend/node-api-gateway
+            dockerfile: ./backend/node-api-gateway/Dockerfile
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Log in to Docker Hub
+        uses: docker/login-action@v3
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+
+      - name: Extract Docker metadata
+        id: meta
+        uses: docker/metadata-action@v5
+        with:
+          images: ${{ secrets.DOCKERHUB_USERNAME }}/${{ env.IMAGE_PREFIX }}-${{ matrix.image_name }}
+          tags: |
+            type=ref,event=branch
+            type=sha
+            type=raw,value=latest,enable={{is_default_branch}}
+
+      - name: Build and push ${{ matrix.image_name }}
+        uses: docker/build-push-action@v6
+        with:
+          context: ${{ matrix.context }}
+          file: ${{ matrix.dockerfile }}
+          push: true
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+
