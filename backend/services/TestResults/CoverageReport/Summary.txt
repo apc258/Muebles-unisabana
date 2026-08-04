@@ -1,0 +1,92 @@
+Summary
+  Generated on: 16/06/2026 - 8:40:53 p. m.
+  Coverage date: 16/06/2026 - 8:40:24 p. m. - 16/06/2026 - 8:40:48 p. m.
+  Parser: MultiReport (6x Cobertura)
+  Assemblies: 8
+  Classes: 56
+  Files: 17
+  Line coverage: 88.9%
+  Covered lines: 1688
+  Uncovered lines: 209
+  Coverable lines: 1897
+  Total lines: 2457
+  Branch coverage: 64.7% (246 of 380)
+  Covered branches: 246
+  Total branches: 380
+  Method coverage: 92.3% (144 of 156)
+  Full method coverage: 85.2% (133 of 156)
+  Covered methods: 144
+  Fully covered methods: 133
+  Total methods: 156
+
+AuthService.Api                                               91.6%
+  AuthDb                                                      97.2%
+  AuthService.Api.Validators.AuthRequestValidator             73.3%
+  AuthService.Api.Validators.AuthValidationResult              100%
+  ForgotPasswordRequest                                        100%
+  LoginRequest                                                 100%
+  PasswordRecoveryNotifier                                    73.2%
+  Program                                                     94.3%
+  RegisterRequest                                              100%
+  UpdateUserRequest                                            100%
+  UserRecord                                                   100%
+
+CartService.Api                                               88.1%
+  AddCartItemRequest                                           100%
+  CartDb                                                       100%
+  CartItemResponse                                             100%
+  CartRecord                                                     0%
+  CartResponse                                                 100%
+  CartService.Api.Validators.CartItemValidator                 100%
+  CartService.Api.Validators.CartTotals                        100%
+  CartService.Api.Validators.CartValidationResult              100%
+  Program                                                     70.7%
+
+CatalogService.Application                                    77.7%
+  CatalogService.Application.CatalogProductDto                  50%
+  CatalogService.Application.ProductCatalogService             100%
+
+CatalogService.Domain                                          100%
+  CatalogService.Domain.Entities.Product                       100%
+  CatalogService.Domain.Entities.ProductValidationResult       100%
+
+CatalogService.Infrastructure                                  100%
+  CatalogService.Infrastructure.InMemoryProductRepository      100%
+
+InventoryService.Api                                          94.9%
+  CreateInventoryProductRequest                                100%
+  InventoryDb                                                 99.1%
+  InventoryProductResponse                                     100%
+  InventoryService.Api.Validators.InventoryProductValidator    100%
+  InventoryService.Api.Validators.InventoryValidationResult    100%
+  Program                                                     72.9%
+  UpdateInventoryProductRequest                                100%
+
+OrderService.Api                                                81%
+  CreateOrderItemRequest                                       100%
+  CreateOrderRequest                                           100%
+  OrderDb                                                     88.3%
+  OrderItemResponse                                            100%
+  OrderResponse                                                100%
+  OrderService.Api.Validators.OrderRequestValidator            100%
+  OrderService.Api.Validators.OrderTotals                      100%
+  OrderService.Api.Validators.OrderTotalsCalculator           85.7%
+  OrderService.Api.Validators.OrderValidationResult            100%
+  Program                                                     62.5%
+  UpdateOrderRequest                                           100%
+
+PaymentService.Api                                            88.9%
+  AuthorizePaymentRequest                                      100%
+  InvoiceItemResponse                                          100%
+  InvoicePdfBuilder                                           97.7%
+  InvoiceResponse                                              100%
+  PaymentDb                                                   88.1%
+  PaymentItemRequest                                           100%
+  PaymentResponse                                              100%
+  PaymentService.Api.Validators.InvoiceNumberGenerator         100%
+  PaymentService.Api.Validators.PaymentRequestValidator        100%
+  PaymentService.Api.Validators.PaymentTotals                  100%
+  PaymentService.Api.Validators.PaymentTotalsCalculator       85.7%
+  PaymentService.Api.Validators.PaymentValidationResult        100%
+  Program                                                     75.4%
+  UpdatePaymentRequest                                         100%

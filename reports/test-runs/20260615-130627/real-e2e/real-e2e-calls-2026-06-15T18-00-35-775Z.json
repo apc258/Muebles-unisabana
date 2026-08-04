@@ -1,0 +1,1879 @@
+[
+  {
+    "timestamp": "2026-06-15T18:00:08.727Z",
+    "method": "GET",
+    "path": "/api/auth/users",
+    "url": "http://localhost:9090/api/auth/users",
+    "status": 200,
+    "ok": true,
+    "durationMs": 107,
+    "requestBody": null,
+    "responseBody": []
+  },
+  {
+    "timestamp": "2026-06-15T18:00:08.727Z",
+    "method": "GET",
+    "path": "/api/catalog",
+    "url": "http://localhost:9090/api/catalog",
+    "status": 200,
+    "ok": true,
+    "durationMs": 107,
+    "requestBody": null,
+    "responseBody": [
+      {
+        "id": "22222222-2222-2222-2222-222222222224",
+        "name": "Escritorio Focus",
+        "category": "oficina",
+        "price": 1299,
+        "image": "https://images.unsplash.com/photo-1518455027359-f3f8164ba6bd?auto=format&fit=crop&w=900&q=80",
+        "colors": [
+          "Blanco",
+          "Roble"
+        ],
+        "measures": [
+          "120 cm",
+          "150 cm"
+        ]
+      },
+      {
+        "id": "22222222-2222-2222-2222-222222222222",
+        "name": "Mesa Comedor Luna",
+        "category": "comedores",
+        "price": 1899,
+        "image": "https://images.unsplash.com/photo-1604578762246-41134e37f9cc?auto=format&fit=crop&w=900&q=80",
+        "colors": [
+          "Nogal",
+          "Roble"
+        ],
+        "measures": [
+          "6 puestos",
+          "8 puestos"
+        ]
+      },
+      {
+        "id": "22222222-2222-2222-2222-222222222223",
+        "name": "Modular Neo",
+        "category": "salas",
+        "price": 3199,
+        "image": "https://images.unsplash.com/photo-1493663284031-b7e3aaa4cab7?auto=format&fit=crop&w=900&q=80",
+        "colors": [
+          "Perla",
+          "Azul humo"
+        ],
+        "measures": [
+          "3 módulos",
+          "4 módulos"
+        ]
+      },
+      {
+        "id": "22222222-2222-2222-2222-222222222221",
+        "name": "Sofá Nórdico Oslo",
+        "category": "salas",
+        "price": 2499,
+        "image": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=900&q=80",
+        "colors": [
+          "Arena",
+          "Grafito",
+          "Oliva"
+        ],
+        "measures": [
+          "2.10m",
+          "2.40m"
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-06-15T18:00:08.727Z",
+    "method": "GET",
+    "path": "/api/cart/6110442a-a3eb-4aa7-b9dd-0bcf7c460d8c",
+    "url": "http://localhost:9090/api/cart/6110442a-a3eb-4aa7-b9dd-0bcf7c460d8c",
+    "status": 200,
+    "ok": true,
+    "durationMs": 107,
+    "requestBody": null,
+    "responseBody": {
+      "id": "e9a42a48-7f7d-4a5c-88db-e3cada462205",
+      "customerId": "6110442a-a3eb-4aa7-b9dd-0bcf7c460d8c",
+      "items": [],
+      "totalAmount": 0
+    }
+  },
+  {
+    "timestamp": "2026-06-15T18:00:08.727Z",
+    "method": "GET",
+    "path": "/api/inventory/products",
+    "url": "http://localhost:9090/api/inventory/products",
+    "status": 200,
+    "ok": true,
+    "durationMs": 107,
+    "requestBody": null,
+    "responseBody": [
+      {
+        "productId": "22222222-2222-2222-2222-222222222224",
+        "sku": "DESK-FOCUS-001",
+        "name": "Escritorio Focus",
+        "category": "oficina",
+        "price": 1299,
+        "image": "https://images.unsplash.com/photo-1518455027359-f3f8164ba6bd?auto=format&fit=crop&w=900&q=80",
+        "colors": [
+          "Blanco",
+          "Roble"
+        ],
+        "measures": [
+          "120 cm",
+          "150 cm"
+        ],
+        "available": 15,
+        "reserved": 0,
+        "supplierName": "Oficinas Pro",
+        "createdAt": "2026-06-15T13:49:51.109245Z",
+        "updatedAt": "2026-06-15T13:49:51.109245Z"
+      },
+      {
+        "productId": "22222222-2222-2222-2222-222222222223",
+        "sku": "MOD-NEO-001",
+        "name": "Modular Neo",
+        "category": "salas",
+        "price": 3199,
+        "image": "https://images.unsplash.com/photo-1493663284031-b7e3aaa4cab7?auto=format&fit=crop&w=900&q=80",
+        "colors": [
+          "Perla",
+          "Azul humo"
+        ],
+        "measures": [
+          "3 módulos",
+          "4 módulos"
+        ],
+        "available": 5,
+        "reserved": 1,
+        "supplierName": "Modulares Urban",
+        "createdAt": "2026-06-15T13:49:51.106691Z",
+        "updatedAt": "2026-06-15T13:49:51.106691Z"
+      },
+      {
+        "productId": "22222222-2222-2222-2222-222222222222",
+        "sku": "MESA-LUNA-001",
+        "name": "Mesa Comedor Luna",
+        "category": "comedores",
+        "price": 1899,
+        "image": "https://images.unsplash.com/photo-1604578762246-41134e37f9cc?auto=format&fit=crop&w=900&q=80",
+        "colors": [
+          "Nogal",
+          "Roble"
+        ],
+        "measures": [
+          "6 puestos",
+          "8 puestos"
+        ],
+        "available": 8,
+        "reserved": 1,
+        "supplierName": "Diseños Luna",
+        "createdAt": "2026-06-15T13:49:51.103898Z",
+        "updatedAt": "2026-06-15T13:49:51.103898Z"
+      },
+      {
+        "productId": "22222222-2222-2222-2222-222222222221",
+        "sku": "SOFA-OSLO-001",
+        "name": "Sofá Nórdico Oslo",
+        "category": "salas",
+        "price": 2499,
+        "image": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=900&q=80",
+        "colors": [
+          "Arena",
+          "Grafito",
+          "Oliva"
+        ],
+        "measures": [
+          "2.10m",
+          "2.40m"
+        ],
+        "available": 12,
+        "reserved": 2,
+        "supplierName": "Muebles Nórdicos",
+        "createdAt": "2026-06-15T13:49:51.076562Z",
+        "updatedAt": "2026-06-15T13:49:51.076562Z"
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-06-15T18:00:08.728Z",
+    "method": "GET",
+    "path": "/api/orders",
+    "url": "http://localhost:9090/api/orders",
+    "status": 200,
+    "ok": true,
+    "durationMs": 107,
+    "requestBody": null,
+    "responseBody": [
+      {
+        "orderId": "1f04d385-df37-4c8e-af1b-fd6130f371ff",
+        "customerId": "6110442a-a3eb-4aa7-b9dd-0bcf7c460d8c",
+        "status": "Created",
+        "subtotal": 6397,
+        "tax": 1023.52,
+        "total": 7420.52,
+        "createdAt": "2026-06-15T17:49:45.438493Z",
+        "updatedAt": "2026-06-15T17:49:45.438493Z",
+        "items": [
+          {
+            "orderItemId": "415beb13-0720-4c4f-a2a9-6d95bf379499",
+            "productId": "22222222-2222-2222-2222-222222222224",
+            "quantity": 1,
+            "unitPrice": 1299,
+            "subtotal": 1299
+          },
+          {
+            "orderItemId": "9ec1c092-84fc-4bc3-a826-0b00f5c0d1e2",
+            "productId": "22222222-2222-2222-2222-222222222223",
+            "quantity": 1,
+            "unitPrice": 3199,
+            "subtotal": 3199
+          },
+          {
+            "orderItemId": "a666dd4a-8b04-43b0-bd92-094347c48da8",
+            "productId": "22222222-2222-2222-2222-222222222222",
+            "quantity": 1,
+            "unitPrice": 1899,
+            "subtotal": 1899
+          }
+        ]
+      },
+      {
+        "orderId": "ead76eae-751f-4f0b-97c9-bd624935c74a",
+        "customerId": "6110442a-a3eb-4aa7-b9dd-0bcf7c460d8c",
+        "status": "Created",
+        "subtotal": 3798,
+        "tax": 607.68,
+        "total": 4405.68,
+        "createdAt": "2026-06-15T17:08:36.896727Z",
+        "updatedAt": "2026-06-15T17:08:36.896727Z",
+        "items": [
+          {
+            "orderItemId": "54d806d7-7d9b-4521-93ee-798a4f7841b3",
+            "productId": "22222222-2222-2222-2222-222222222224",
+            "quantity": 1,
+            "unitPrice": 1299,
+            "subtotal": 1299
+          },
+          {
+            "orderItemId": "95253cb6-dd55-4d26-9819-a4111030f8b0",
+            "productId": "22222222-2222-2222-2222-222222222221",
+            "quantity": 1,
+            "unitPrice": 2499,
+            "subtotal": 2499
+          }
+        ]
+      },
+      {
+        "orderId": "c9732ea1-15ec-4936-b09b-e40a84269e1e",
+        "customerId": "6110442a-a3eb-4aa7-b9dd-0bcf7c460d8c",
+        "status": "Created",
+        "subtotal": 3198,
+        "tax": 511.68,
+        "total": 3709.68,
+        "createdAt": "2026-06-15T17:07:49.717851Z",
+        "updatedAt": "2026-06-15T17:07:49.717851Z",
+        "items": [
+          {
+            "orderItemId": "5978f63d-7b88-43b0-863c-23b1a1fc6756",
+            "productId": "22222222-2222-2222-2222-222222222224",
+            "quantity": 1,
+            "unitPrice": 1299,
+            "subtotal": 1299
+          },
+          {
+            "orderItemId": "8bfe5efc-a6eb-4df9-a5d1-f04c631355f0",
+            "productId": "22222222-2222-2222-2222-222222222222",
+            "quantity": 1,
+            "unitPrice": 1899,
+            "subtotal": 1899
+          }
+        ]
+      },
+      {
+        "orderId": "ad6ee339-da7b-4132-a444-ca6f37c6dbba",
+        "customerId": "6110442a-a3eb-4aa7-b9dd-0bcf7c460d8c",
+        "status": "Created",
+        "subtotal": 3198,
+        "tax": 511.68,
+        "total": 3709.68,
+        "createdAt": "2026-06-15T16:47:55.557985Z",
+        "updatedAt": "2026-06-15T16:47:55.557985Z",
+        "items": [
+          {
+            "orderItemId": "48854f53-b867-4dd5-b696-4a72d2cea977",
+            "productId": "22222222-2222-2222-2222-222222222222",
+            "quantity": 1,
+            "unitPrice": 1899,
+            "subtotal": 1899
+          },
+          {
+            "orderItemId": "caa18e10-dc74-4560-8d5a-55345965babe",
+            "productId": "22222222-2222-2222-2222-222222222224",
+            "quantity": 1,
+            "unitPrice": 1299,
+            "subtotal": 1299
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-06-15T18:00:08.728Z",
+    "method": "GET",
+    "path": "/api/payments",
+    "url": "http://localhost:9090/api/payments",
+    "status": 200,
+    "ok": true,
+    "durationMs": 107,
+    "requestBody": null,
+    "responseBody": [
+      {
+        "paymentId": "dffab9dd-c1a4-408b-a0c0-170a210e4743",
+        "orderId": "1f04d385-df37-4c8e-af1b-fd6130f371ff",
+        "customerId": "6110442a-a3eb-4aa7-b9dd-0bcf7c460d8c",
+        "customerName": "Nelson gomez",
+        "customerEmail": "nelson@muebles.com",
+        "paymentMethod": "Tarjeta",
+        "status": "Authorized",
+        "subtotal": 6397,
+        "tax": 1023.52,
+        "total": 7420.52,
+        "createdAt": "2026-06-15T17:49:45.468425Z",
+        "invoice": {
+          "invoiceId": "be986863-d8e9-4783-96df-05694504c482",
+          "paymentId": "dffab9dd-c1a4-408b-a0c0-170a210e4743",
+          "orderId": "1f04d385-df37-4c8e-af1b-fd6130f371ff",
+          "customerId": "6110442a-a3eb-4aa7-b9dd-0bcf7c460d8c",
+          "customerName": "Nelson gomez",
+          "customerEmail": "nelson@muebles.com",
+          "paymentMethod": "Tarjeta",
+          "invoiceNumber": "FAC-20260615-DFFAB9DD",
+          "issuedAt": "2026-06-15T17:49:45.467517Z",
+          "subtotal": 6397,
+          "tax": 1023.52,
+          "total": 7420.52,
+          "items": [
+            {
+              "productName": "Modular Neo",
+              "quantity": 1,
+              "unitPrice": 3199,
+              "subtotal": 3199
+            },
+            {
+              "productName": "Mesa Comedor Luna",
+              "quantity": 1,
+              "unitPrice": 1899,
+              "subtotal": 1899
+            },
+            {
+              "productName": "Escritorio Focus",
+              "quantity": 1,
+              "unitPrice": 1299,
+              "subtotal": 1299
+            }
+          ]
+        }
+      },
+      {
+        "paymentId": "9392ceef-86b1-414a-aacf-a7c156a7b727",
+        "orderId": "ead76eae-751f-4f0b-97c9-bd624935c74a",
+        "customerId": "6110442a-a3eb-4aa7-b9dd-0bcf7c460d8c",
+        "customerName": "Nelson gomez",
+        "customerEmail": "nelson@muebles.com",
+        "paymentMethod": "Tarjeta",
+        "status": "Authorized",
+        "subtotal": 3798,
+        "tax": 607.68,
+        "total": 4405.68,
+        "createdAt": "2026-06-15T17:08:36.922394Z",
+        "invoice": {
+          "invoiceId": "59e2778b-d74c-436e-85a7-7de91d8c4e58",
+          "paymentId": "9392ceef-86b1-414a-aacf-a7c156a7b727",
+          "orderId": "ead76eae-751f-4f0b-97c9-bd624935c74a",
+          "customerId": "6110442a-a3eb-4aa7-b9dd-0bcf7c460d8c",
+          "customerName": "Nelson gomez",
+          "customerEmail": "nelson@muebles.com",
+          "paymentMethod": "Tarjeta",
+          "invoiceNumber": "FAC-20260615-9392CEEF",
+          "issuedAt": "2026-06-15T17:08:36.921612Z",
+          "subtotal": 3798,
+          "tax": 607.68,
+          "total": 4405.68,
+          "items": [
+            {
+              "productName": "Escritorio Focus",
+              "quantity": 1,
+              "unitPrice": 1299,
+              "subtotal": 1299
+            },
+            {
+              "productName": "Sofá Nórdico Oslo",
+              "quantity": 1,
+              "unitPrice": 2499,
+              "subtotal": 2499
+            }
+          ]
+        }
+      },
+      {
+        "paymentId": "7769a6be-a18e-4817-a5a4-e20a25fc3b22",
+        "orderId": "c9732ea1-15ec-4936-b09b-e40a84269e1e",
+        "customerId": "6110442a-a3eb-4aa7-b9dd-0bcf7c460d8c",
+        "customerName": "Nelson gomez",
+        "customerEmail": "nelson@muebles.com",
+        "paymentMethod": "Tarjeta",
+        "status": "Authorized",
+        "subtotal": 3198,
+        "tax": 511.68,
+        "total": 3709.68,
+        "createdAt": "2026-06-15T17:07:49.771826Z",
+        "invoice": {
+          "invoiceId": "658b88a7-8be9-45e3-aa47-167c988b967f",
+          "paymentId": "7769a6be-a18e-4817-a5a4-e20a25fc3b22",
+          "orderId": "c9732ea1-15ec-4936-b09b-e40a84269e1e",
+          "customerId": "6110442a-a3eb-4aa7-b9dd-0bcf7c460d8c",
+          "customerName": "Nelson gomez",
+          "customerEmail": "nelson@muebles.com",
+          "paymentMethod": "Tarjeta",
+          "invoiceNumber": "FAC-20260615-7769A6BE",
+          "issuedAt": "2026-06-15T17:07:49.762534Z",
+          "subtotal": 3198,
+          "tax": 511.68,
+          "total": 3709.68,
+          "items": [
+            {
+              "productName": "Mesa Comedor Luna",
+              "quantity": 1,
+              "unitPrice": 1899,
+              "subtotal": 1899
+            },
+            {
+              "productName": "Escritorio Focus",
+              "quantity": 1,
+              "unitPrice": 1299,
+              "subtotal": 1299
+            }
+          ]
+        }
+      },
+      {
+        "paymentId": "a7273b44-c609-41a8-8fc5-1d95c28e041a",
+        "orderId": "ad6ee339-da7b-4132-a444-ca6f37c6dbba",
+        "customerId": "6110442a-a3eb-4aa7-b9dd-0bcf7c460d8c",
+        "customerName": "Nelson gomez",
+        "customerEmail": "nelson@muebles.com",
+        "paymentMethod": "Tarjeta",
+        "status": "Authorized",
+        "subtotal": 3198,
+        "tax": 511.68,
+        "total": 3709.68,
+        "createdAt": "2026-06-15T16:47:55.646057Z",
+        "invoice": {
+          "invoiceId": "cc115043-b65c-46d0-94f6-25e08616db16",
+          "paymentId": "a7273b44-c609-41a8-8fc5-1d95c28e041a",
+          "orderId": "ad6ee339-da7b-4132-a444-ca6f37c6dbba",
+          "customerId": "6110442a-a3eb-4aa7-b9dd-0bcf7c460d8c",
+          "customerName": "Nelson gomez",
+          "customerEmail": "nelson@muebles.com",
+          "paymentMethod": "Tarjeta",
+          "invoiceNumber": "FAC-20260615-A7273B44",
+          "issuedAt": "2026-06-15T16:47:55.644798Z",
+          "subtotal": 3198,
+          "tax": 511.68,
+          "total": 3709.68,
+          "items": [
+            {
+              "productName": "Escritorio Focus",
+              "quantity": 1,
+              "unitPrice": 1299,
+              "subtotal": 1299
+            },
+            {
+              "productName": "Mesa Comedor Luna",
+              "quantity": 1,
+              "unitPrice": 1899,
+              "subtotal": 1899
+            }
+          ]
+        }
+      },
+      {
+        "paymentId": "bd942828-543e-43cc-a241-da40b3ec9d61",
+        "orderId": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+        "customerId": "cliente-demo-001",
+        "customerName": "Cliente Demo Uno",
+        "customerEmail": "cliente1@muebles.com",
+        "paymentMethod": "Tarjeta",
+        "status": "Authorized",
+        "subtotal": 4398,
+        "tax": 703.68,
+        "total": 5101.68,
+        "createdAt": "2026-06-15T13:49:52.157952Z",
+        "invoice": {
+          "invoiceId": "f103a078-00e4-49d5-9dd5-83b711fb6fee",
+          "paymentId": "bd942828-543e-43cc-a241-da40b3ec9d61",
+          "orderId": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+          "customerId": "cliente-demo-001",
+          "customerName": "Cliente Demo Uno",
+          "customerEmail": "cliente1@muebles.com",
+          "paymentMethod": "Tarjeta",
+          "invoiceNumber": "FAC-20260615-BD942828",
+          "issuedAt": "2026-06-15T13:49:52.132752Z",
+          "subtotal": 4398,
+          "tax": 703.68,
+          "total": 5101.68,
+          "items": [
+            {
+              "productName": "Sofá Nórdico Oslo",
+              "quantity": 1,
+              "unitPrice": 2499,
+              "subtotal": 2499
+            },
+            {
+              "productName": "Mesa Comedor Luna",
+              "quantity": 1,
+              "unitPrice": 1899,
+              "subtotal": 1899
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-06-15T18:00:08.728Z",
+    "method": "GET",
+    "path": "/api/auth/users",
+    "url": "http://localhost:9090/api/auth/users",
+    "status": 200,
+    "ok": true,
+    "durationMs": 106,
+    "requestBody": null,
+    "responseBody": []
+  },
+  {
+    "timestamp": "2026-06-15T18:00:08.728Z",
+    "method": "GET",
+    "path": "/api/catalog",
+    "url": "http://localhost:9090/api/catalog",
+    "status": 200,
+    "ok": true,
+    "durationMs": 107,
+    "requestBody": null,
+    "responseBody": [
+      {
+        "id": "22222222-2222-2222-2222-222222222224",
+        "name": "Escritorio Focus",
+        "category": "oficina",
+        "price": 1299,
+        "image": "https://images.unsplash.com/photo-1518455027359-f3f8164ba6bd?auto=format&fit=crop&w=900&q=80",
+        "colors": [
+          "Blanco",
+          "Roble"
+        ],
+        "measures": [
+          "120 cm",
+          "150 cm"
+        ]
+      },
+      {
+        "id": "22222222-2222-2222-2222-222222222222",
+        "name": "Mesa Comedor Luna",
+        "category": "comedores",
+        "price": 1899,
+        "image": "https://images.unsplash.com/photo-1604578762246-41134e37f9cc?auto=format&fit=crop&w=900&q=80",
+        "colors": [
+          "Nogal",
+          "Roble"
+        ],
+        "measures": [
+          "6 puestos",
+          "8 puestos"
+        ]
+      },
+      {
+        "id": "22222222-2222-2222-2222-222222222223",
+        "name": "Modular Neo",
+        "category": "salas",
+        "price": 3199,
+        "image": "https://images.unsplash.com/photo-1493663284031-b7e3aaa4cab7?auto=format&fit=crop&w=900&q=80",
+        "colors": [
+          "Perla",
+          "Azul humo"
+        ],
+        "measures": [
+          "3 módulos",
+          "4 módulos"
+        ]
+      },
+      {
+        "id": "22222222-2222-2222-2222-222222222221",
+        "name": "Sofá Nórdico Oslo",
+        "category": "salas",
+        "price": 2499,
+        "image": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=900&q=80",
+        "colors": [
+          "Arena",
+          "Grafito",
+          "Oliva"
+        ],
+        "measures": [
+          "2.10m",
+          "2.40m"
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-06-15T18:00:08.729Z",
+    "method": "GET",
+    "path": "/api/cart/6110442a-a3eb-4aa7-b9dd-0bcf7c460d8c",
+    "url": "http://localhost:9090/api/cart/6110442a-a3eb-4aa7-b9dd-0bcf7c460d8c",
+    "status": 200,
+    "ok": true,
+    "durationMs": 106,
+    "requestBody": null,
+    "responseBody": {
+      "id": "e9a42a48-7f7d-4a5c-88db-e3cada462205",
+      "customerId": "6110442a-a3eb-4aa7-b9dd-0bcf7c460d8c",
+      "items": [],
+      "totalAmount": 0
+    }
+  },
+  {
+    "timestamp": "2026-06-15T18:00:08.729Z",
+    "method": "GET",
+    "path": "/api/inventory/products",
+    "url": "http://localhost:9090/api/inventory/products",
+    "status": 200,
+    "ok": true,
+    "durationMs": 107,
+    "requestBody": null,
+    "responseBody": [
+      {
+        "productId": "22222222-2222-2222-2222-222222222224",
+        "sku": "DESK-FOCUS-001",
+        "name": "Escritorio Focus",
+        "category": "oficina",
+        "price": 1299,
+        "image": "https://images.unsplash.com/photo-1518455027359-f3f8164ba6bd?auto=format&fit=crop&w=900&q=80",
+        "colors": [
+          "Blanco",
+          "Roble"
+        ],
+        "measures": [
+          "120 cm",
+          "150 cm"
+        ],
+        "available": 15,
+        "reserved": 0,
+        "supplierName": "Oficinas Pro",
+        "createdAt": "2026-06-15T13:49:51.109245Z",
+        "updatedAt": "2026-06-15T13:49:51.109245Z"
+      },
+      {
+        "productId": "22222222-2222-2222-2222-222222222223",
+        "sku": "MOD-NEO-001",
+        "name": "Modular Neo",
+        "category": "salas",
+        "price": 3199,
+        "image": "https://images.unsplash.com/photo-1493663284031-b7e3aaa4cab7?auto=format&fit=crop&w=900&q=80",
+        "colors": [
+          "Perla",
+          "Azul humo"
+        ],
+        "measures": [
+          "3 módulos",
+          "4 módulos"
+        ],
+        "available": 5,
+        "reserved": 1,
+        "supplierName": "Modulares Urban",
+        "createdAt": "2026-06-15T13:49:51.106691Z",
+        "updatedAt": "2026-06-15T13:49:51.106691Z"
+      },
+      {
+        "productId": "22222222-2222-2222-2222-222222222222",
+        "sku": "MESA-LUNA-001",
+        "name": "Mesa Comedor Luna",
+        "category": "comedores",
+        "price": 1899,
+        "image": "https://images.unsplash.com/photo-1604578762246-41134e37f9cc?auto=format&fit=crop&w=900&q=80",
+        "colors": [
+          "Nogal",
+          "Roble"
+        ],
+        "measures": [
+          "6 puestos",
+          "8 puestos"
+        ],
+        "available": 8,
+        "reserved": 1,
+        "supplierName": "Diseños Luna",
+        "createdAt": "2026-06-15T13:49:51.103898Z",
+        "updatedAt": "2026-06-15T13:49:51.103898Z"
+      },
+      {
+        "productId": "22222222-2222-2222-2222-222222222221",
+        "sku": "SOFA-OSLO-001",
+        "name": "Sofá Nórdico Oslo",
+        "category": "salas",
+        "price": 2499,
+        "image": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=900&q=80",
+        "colors": [
+          "Arena",
+          "Grafito",
+          "Oliva"
+        ],
+        "measures": [
+          "2.10m",
+          "2.40m"
+        ],
+        "available": 12,
+        "reserved": 2,
+        "supplierName": "Muebles Nórdicos",
+        "createdAt": "2026-06-15T13:49:51.076562Z",
+        "updatedAt": "2026-06-15T13:49:51.076562Z"
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-06-15T18:00:08.729Z",
+    "method": "GET",
+    "path": "/api/orders",
+    "url": "http://localhost:9090/api/orders",
+    "status": 200,
+    "ok": true,
+    "durationMs": 107,
+    "requestBody": null,
+    "responseBody": [
+      {
+        "orderId": "1f04d385-df37-4c8e-af1b-fd6130f371ff",
+        "customerId": "6110442a-a3eb-4aa7-b9dd-0bcf7c460d8c",
+        "status": "Created",
+        "subtotal": 6397,
+        "tax": 1023.52,
+        "total": 7420.52,
+        "createdAt": "2026-06-15T17:49:45.438493Z",
+        "updatedAt": "2026-06-15T17:49:45.438493Z",
+        "items": [
+          {
+            "orderItemId": "415beb13-0720-4c4f-a2a9-6d95bf379499",
+            "productId": "22222222-2222-2222-2222-222222222224",
+            "quantity": 1,
+            "unitPrice": 1299,
+            "subtotal": 1299
+          },
+          {
+            "orderItemId": "9ec1c092-84fc-4bc3-a826-0b00f5c0d1e2",
+            "productId": "22222222-2222-2222-2222-222222222223",
+            "quantity": 1,
+            "unitPrice": 3199,
+            "subtotal": 3199
+          },
+          {
+            "orderItemId": "a666dd4a-8b04-43b0-bd92-094347c48da8",
+            "productId": "22222222-2222-2222-2222-222222222222",
+            "quantity": 1,
+            "unitPrice": 1899,
+            "subtotal": 1899
+          }
+        ]
+      },
+      {
+        "orderId": "ead76eae-751f-4f0b-97c9-bd624935c74a",
+        "customerId": "6110442a-a3eb-4aa7-b9dd-0bcf7c460d8c",
+        "status": "Created",
+        "subtotal": 3798,
+        "tax": 607.68,
+        "total": 4405.68,
+        "createdAt": "2026-06-15T17:08:36.896727Z",
+        "updatedAt": "2026-06-15T17:08:36.896727Z",
+        "items": [
+          {
+            "orderItemId": "54d806d7-7d9b-4521-93ee-798a4f7841b3",
+            "productId": "22222222-2222-2222-2222-222222222224",
+            "quantity": 1,
+            "unitPrice": 1299,
+            "subtotal": 1299
+          },
+          {
+            "orderItemId": "95253cb6-dd55-4d26-9819-a4111030f8b0",
+            "productId": "22222222-2222-2222-2222-222222222221",
+            "quantity": 1,
+            "unitPrice": 2499,
+            "subtotal": 2499
+          }
+        ]
+      },
+      {
+        "orderId": "c9732ea1-15ec-4936-b09b-e40a84269e1e",
+        "customerId": "6110442a-a3eb-4aa7-b9dd-0bcf7c460d8c",
+        "status": "Created",
+        "subtotal": 3198,
+        "tax": 511.68,
+        "total": 3709.68,
+        "createdAt": "2026-06-15T17:07:49.717851Z",
+        "updatedAt": "2026-06-15T17:07:49.717851Z",
+        "items": [
+          {
+            "orderItemId": "5978f63d-7b88-43b0-863c-23b1a1fc6756",
+            "productId": "22222222-2222-2222-2222-222222222224",
+            "quantity": 1,
+            "unitPrice": 1299,
+            "subtotal": 1299
+          },
+          {
+            "orderItemId": "8bfe5efc-a6eb-4df9-a5d1-f04c631355f0",
+            "productId": "22222222-2222-2222-2222-222222222222",
+            "quantity": 1,
+            "unitPrice": 1899,
+            "subtotal": 1899
+          }
+        ]
+      },
+      {
+        "orderId": "ad6ee339-da7b-4132-a444-ca6f37c6dbba",
+        "customerId": "6110442a-a3eb-4aa7-b9dd-0bcf7c460d8c",
+        "status": "Created",
+        "subtotal": 3198,
+        "tax": 511.68,
+        "total": 3709.68,
+        "createdAt": "2026-06-15T16:47:55.557985Z",
+        "updatedAt": "2026-06-15T16:47:55.557985Z",
+        "items": [
+          {
+            "orderItemId": "48854f53-b867-4dd5-b696-4a72d2cea977",
+            "productId": "22222222-2222-2222-2222-222222222222",
+            "quantity": 1,
+            "unitPrice": 1899,
+            "subtotal": 1899
+          },
+          {
+            "orderItemId": "caa18e10-dc74-4560-8d5a-55345965babe",
+            "productId": "22222222-2222-2222-2222-222222222224",
+            "quantity": 1,
+            "unitPrice": 1299,
+            "subtotal": 1299
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-06-15T18:00:08.730Z",
+    "method": "GET",
+    "path": "/api/payments",
+    "url": "http://localhost:9090/api/payments",
+    "status": 200,
+    "ok": true,
+    "durationMs": 106,
+    "requestBody": null,
+    "responseBody": [
+      {
+        "paymentId": "dffab9dd-c1a4-408b-a0c0-170a210e4743",
+        "orderId": "1f04d385-df37-4c8e-af1b-fd6130f371ff",
+        "customerId": "6110442a-a3eb-4aa7-b9dd-0bcf7c460d8c",
+        "customerName": "Nelson gomez",
+        "customerEmail": "nelson@muebles.com",
+        "paymentMethod": "Tarjeta",
+        "status": "Authorized",
+        "subtotal": 6397,
+        "tax": 1023.52,
+        "total": 7420.52,
+        "createdAt": "2026-06-15T17:49:45.468425Z",
+        "invoice": {
+          "invoiceId": "be986863-d8e9-4783-96df-05694504c482",
+          "paymentId": "dffab9dd-c1a4-408b-a0c0-170a210e4743",
+          "orderId": "1f04d385-df37-4c8e-af1b-fd6130f371ff",
+          "customerId": "6110442a-a3eb-4aa7-b9dd-0bcf7c460d8c",
+          "customerName": "Nelson gomez",
+          "customerEmail": "nelson@muebles.com",
+          "paymentMethod": "Tarjeta",
+          "invoiceNumber": "FAC-20260615-DFFAB9DD",
+          "issuedAt": "2026-06-15T17:49:45.467517Z",
+          "subtotal": 6397,
+          "tax": 1023.52,
+          "total": 7420.52,
+          "items": [
+            {
+              "productName": "Modular Neo",
+              "quantity": 1,
+              "unitPrice": 3199,
+              "subtotal": 3199
+            },
+            {
+              "productName": "Mesa Comedor Luna",
+              "quantity": 1,
+              "unitPrice": 1899,
+              "subtotal": 1899
+            },
+            {
+              "productName": "Escritorio Focus",
+              "quantity": 1,
+              "unitPrice": 1299,
+              "subtotal": 1299
+            }
+          ]
+        }
+      },
+      {
+        "paymentId": "9392ceef-86b1-414a-aacf-a7c156a7b727",
+        "orderId": "ead76eae-751f-4f0b-97c9-bd624935c74a",
+        "customerId": "6110442a-a3eb-4aa7-b9dd-0bcf7c460d8c",
+        "customerName": "Nelson gomez",
+        "customerEmail": "nelson@muebles.com",
+        "paymentMethod": "Tarjeta",
+        "status": "Authorized",
+        "subtotal": 3798,
+        "tax": 607.68,
+        "total": 4405.68,
+        "createdAt": "2026-06-15T17:08:36.922394Z",
+        "invoice": {
+          "invoiceId": "59e2778b-d74c-436e-85a7-7de91d8c4e58",
+          "paymentId": "9392ceef-86b1-414a-aacf-a7c156a7b727",
+          "orderId": "ead76eae-751f-4f0b-97c9-bd624935c74a",
+          "customerId": "6110442a-a3eb-4aa7-b9dd-0bcf7c460d8c",
+          "customerName": "Nelson gomez",
+          "customerEmail": "nelson@muebles.com",
+          "paymentMethod": "Tarjeta",
+          "invoiceNumber": "FAC-20260615-9392CEEF",
+          "issuedAt": "2026-06-15T17:08:36.921612Z",
+          "subtotal": 3798,
+          "tax": 607.68,
+          "total": 4405.68,
+          "items": [
+            {
+              "productName": "Escritorio Focus",
+              "quantity": 1,
+              "unitPrice": 1299,
+              "subtotal": 1299
+            },
+            {
+              "productName": "Sofá Nórdico Oslo",
+              "quantity": 1,
+              "unitPrice": 2499,
+              "subtotal": 2499
+            }
+          ]
+        }
+      },
+      {
+        "paymentId": "7769a6be-a18e-4817-a5a4-e20a25fc3b22",
+        "orderId": "c9732ea1-15ec-4936-b09b-e40a84269e1e",
+        "customerId": "6110442a-a3eb-4aa7-b9dd-0bcf7c460d8c",
+        "customerName": "Nelson gomez",
+        "customerEmail": "nelson@muebles.com",
+        "paymentMethod": "Tarjeta",
+        "status": "Authorized",
+        "subtotal": 3198,
+        "tax": 511.68,
+        "total": 3709.68,
+        "createdAt": "2026-06-15T17:07:49.771826Z",
+        "invoice": {
+          "invoiceId": "658b88a7-8be9-45e3-aa47-167c988b967f",
+          "paymentId": "7769a6be-a18e-4817-a5a4-e20a25fc3b22",
+          "orderId": "c9732ea1-15ec-4936-b09b-e40a84269e1e",
+          "customerId": "6110442a-a3eb-4aa7-b9dd-0bcf7c460d8c",
+          "customerName": "Nelson gomez",
+          "customerEmail": "nelson@muebles.com",
+          "paymentMethod": "Tarjeta",
+          "invoiceNumber": "FAC-20260615-7769A6BE",
+          "issuedAt": "2026-06-15T17:07:49.762534Z",
+          "subtotal": 3198,
+          "tax": 511.68,
+          "total": 3709.68,
+          "items": [
+            {
+              "productName": "Mesa Comedor Luna",
+              "quantity": 1,
+              "unitPrice": 1899,
+              "subtotal": 1899
+            },
+            {
+              "productName": "Escritorio Focus",
+              "quantity": 1,
+              "unitPrice": 1299,
+              "subtotal": 1299
+            }
+          ]
+        }
+      },
+      {
+        "paymentId": "a7273b44-c609-41a8-8fc5-1d95c28e041a",
+        "orderId": "ad6ee339-da7b-4132-a444-ca6f37c6dbba",
+        "customerId": "6110442a-a3eb-4aa7-b9dd-0bcf7c460d8c",
+        "customerName": "Nelson gomez",
+        "customerEmail": "nelson@muebles.com",
+        "paymentMethod": "Tarjeta",
+        "status": "Authorized",
+        "subtotal": 3198,
+        "tax": 511.68,
+        "total": 3709.68,
+        "createdAt": "2026-06-15T16:47:55.646057Z",
+        "invoice": {
+          "invoiceId": "cc115043-b65c-46d0-94f6-25e08616db16",
+          "paymentId": "a7273b44-c609-41a8-8fc5-1d95c28e041a",
+          "orderId": "ad6ee339-da7b-4132-a444-ca6f37c6dbba",
+          "customerId": "6110442a-a3eb-4aa7-b9dd-0bcf7c460d8c",
+          "customerName": "Nelson gomez",
+          "customerEmail": "nelson@muebles.com",
+          "paymentMethod": "Tarjeta",
+          "invoiceNumber": "FAC-20260615-A7273B44",
+          "issuedAt": "2026-06-15T16:47:55.644798Z",
+          "subtotal": 3198,
+          "tax": 511.68,
+          "total": 3709.68,
+          "items": [
+            {
+              "productName": "Escritorio Focus",
+              "quantity": 1,
+              "unitPrice": 1299,
+              "subtotal": 1299
+            },
+            {
+              "productName": "Mesa Comedor Luna",
+              "quantity": 1,
+              "unitPrice": 1899,
+              "subtotal": 1899
+            }
+          ]
+        }
+      },
+      {
+        "paymentId": "bd942828-543e-43cc-a241-da40b3ec9d61",
+        "orderId": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+        "customerId": "cliente-demo-001",
+        "customerName": "Cliente Demo Uno",
+        "customerEmail": "cliente1@muebles.com",
+        "paymentMethod": "Tarjeta",
+        "status": "Authorized",
+        "subtotal": 4398,
+        "tax": 703.68,
+        "total": 5101.68,
+        "createdAt": "2026-06-15T13:49:52.157952Z",
+        "invoice": {
+          "invoiceId": "f103a078-00e4-49d5-9dd5-83b711fb6fee",
+          "paymentId": "bd942828-543e-43cc-a241-da40b3ec9d61",
+          "orderId": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+          "customerId": "cliente-demo-001",
+          "customerName": "Cliente Demo Uno",
+          "customerEmail": "cliente1@muebles.com",
+          "paymentMethod": "Tarjeta",
+          "invoiceNumber": "FAC-20260615-BD942828",
+          "issuedAt": "2026-06-15T13:49:52.132752Z",
+          "subtotal": 4398,
+          "tax": 703.68,
+          "total": 5101.68,
+          "items": [
+            {
+              "productName": "Sofá Nórdico Oslo",
+              "quantity": 1,
+              "unitPrice": 2499,
+              "subtotal": 2499
+            },
+            {
+              "productName": "Mesa Comedor Luna",
+              "quantity": 1,
+              "unitPrice": 1899,
+              "subtotal": 1899
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-06-15T18:00:23.805Z",
+    "method": "POST",
+    "path": "/api/cart/items",
+    "url": "http://localhost:9090/api/cart/items",
+    "status": 200,
+    "ok": true,
+    "durationMs": 32,
+    "requestBody": {
+      "customerId": "6110442a-a3eb-4aa7-b9dd-0bcf7c460d8c",
+      "productId": "22222222-2222-2222-2222-222222222224",
+      "quantity": 1,
+      "unitPrice": 1299,
+      "productName": "Escritorio Focus"
+    },
+    "responseBody": {
+      "id": "e9a42a48-7f7d-4a5c-88db-e3cada462205",
+      "customerId": "6110442a-a3eb-4aa7-b9dd-0bcf7c460d8c",
+      "items": [
+        {
+          "productId": "22222222-2222-2222-2222-222222222224",
+          "productName": "Escritorio Focus",
+          "quantity": 1,
+          "unitPrice": 1299,
+          "subtotal": 1299
+        }
+      ],
+      "totalAmount": 1506.84
+    }
+  },
+  {
+    "timestamp": "2026-06-15T18:00:23.822Z",
+    "method": "GET",
+    "path": "/api/cart/6110442a-a3eb-4aa7-b9dd-0bcf7c460d8c",
+    "url": "http://localhost:9090/api/cart/6110442a-a3eb-4aa7-b9dd-0bcf7c460d8c",
+    "status": 200,
+    "ok": true,
+    "durationMs": 15,
+    "requestBody": null,
+    "responseBody": {
+      "id": "e9a42a48-7f7d-4a5c-88db-e3cada462205",
+      "customerId": "6110442a-a3eb-4aa7-b9dd-0bcf7c460d8c",
+      "items": [
+        {
+          "productId": "22222222-2222-2222-2222-222222222224",
+          "productName": "Escritorio Focus",
+          "quantity": 1,
+          "unitPrice": 1299,
+          "subtotal": 1299
+        }
+      ],
+      "totalAmount": 1506.84
+    }
+  },
+  {
+    "timestamp": "2026-06-15T18:00:26.434Z",
+    "method": "POST",
+    "path": "/api/cart/items",
+    "url": "http://localhost:9090/api/cart/items",
+    "status": 200,
+    "ok": true,
+    "durationMs": 14,
+    "requestBody": {
+      "customerId": "6110442a-a3eb-4aa7-b9dd-0bcf7c460d8c",
+      "productId": "22222222-2222-2222-2222-222222222222",
+      "quantity": 1,
+      "unitPrice": 1899,
+      "productName": "Mesa Comedor Luna"
+    },
+    "responseBody": {
+      "id": "e9a42a48-7f7d-4a5c-88db-e3cada462205",
+      "customerId": "6110442a-a3eb-4aa7-b9dd-0bcf7c460d8c",
+      "items": [
+        {
+          "productId": "22222222-2222-2222-2222-222222222224",
+          "productName": "Escritorio Focus",
+          "quantity": 1,
+          "unitPrice": 1299,
+          "subtotal": 1299
+        },
+        {
+          "productId": "22222222-2222-2222-2222-222222222222",
+          "productName": "Mesa Comedor Luna",
+          "quantity": 1,
+          "unitPrice": 1899,
+          "subtotal": 1899
+        }
+      ],
+      "totalAmount": 3709.68
+    }
+  },
+  {
+    "timestamp": "2026-06-15T18:00:26.442Z",
+    "method": "GET",
+    "path": "/api/cart/6110442a-a3eb-4aa7-b9dd-0bcf7c460d8c",
+    "url": "http://localhost:9090/api/cart/6110442a-a3eb-4aa7-b9dd-0bcf7c460d8c",
+    "status": 200,
+    "ok": true,
+    "durationMs": 7,
+    "requestBody": null,
+    "responseBody": {
+      "id": "e9a42a48-7f7d-4a5c-88db-e3cada462205",
+      "customerId": "6110442a-a3eb-4aa7-b9dd-0bcf7c460d8c",
+      "items": [
+        {
+          "productId": "22222222-2222-2222-2222-222222222224",
+          "productName": "Escritorio Focus",
+          "quantity": 1,
+          "unitPrice": 1299,
+          "subtotal": 1299
+        },
+        {
+          "productId": "22222222-2222-2222-2222-222222222222",
+          "productName": "Mesa Comedor Luna",
+          "quantity": 1,
+          "unitPrice": 1899,
+          "subtotal": 1899
+        }
+      ],
+      "totalAmount": 3709.68
+    }
+  },
+  {
+    "timestamp": "2026-06-15T18:00:27.458Z",
+    "method": "POST",
+    "path": "/api/cart/items",
+    "url": "http://localhost:9090/api/cart/items",
+    "status": 200,
+    "ok": true,
+    "durationMs": 14,
+    "requestBody": {
+      "customerId": "6110442a-a3eb-4aa7-b9dd-0bcf7c460d8c",
+      "productId": "22222222-2222-2222-2222-222222222223",
+      "quantity": 1,
+      "unitPrice": 3199,
+      "productName": "Modular Neo"
+    },
+    "responseBody": {
+      "id": "e9a42a48-7f7d-4a5c-88db-e3cada462205",
+      "customerId": "6110442a-a3eb-4aa7-b9dd-0bcf7c460d8c",
+      "items": [
+        {
+          "productId": "22222222-2222-2222-2222-222222222224",
+          "productName": "Escritorio Focus",
+          "quantity": 1,
+          "unitPrice": 1299,
+          "subtotal": 1299
+        },
+        {
+          "productId": "22222222-2222-2222-2222-222222222222",
+          "productName": "Mesa Comedor Luna",
+          "quantity": 1,
+          "unitPrice": 1899,
+          "subtotal": 1899
+        },
+        {
+          "productId": "22222222-2222-2222-2222-222222222223",
+          "productName": "Modular Neo",
+          "quantity": 1,
+          "unitPrice": 3199,
+          "subtotal": 3199
+        }
+      ],
+      "totalAmount": 7420.52
+    }
+  },
+  {
+    "timestamp": "2026-06-15T18:00:27.468Z",
+    "method": "GET",
+    "path": "/api/cart/6110442a-a3eb-4aa7-b9dd-0bcf7c460d8c",
+    "url": "http://localhost:9090/api/cart/6110442a-a3eb-4aa7-b9dd-0bcf7c460d8c",
+    "status": 200,
+    "ok": true,
+    "durationMs": 8,
+    "requestBody": null,
+    "responseBody": {
+      "id": "e9a42a48-7f7d-4a5c-88db-e3cada462205",
+      "customerId": "6110442a-a3eb-4aa7-b9dd-0bcf7c460d8c",
+      "items": [
+        {
+          "productId": "22222222-2222-2222-2222-222222222224",
+          "productName": "Escritorio Focus",
+          "quantity": 1,
+          "unitPrice": 1299,
+          "subtotal": 1299
+        },
+        {
+          "productId": "22222222-2222-2222-2222-222222222222",
+          "productName": "Mesa Comedor Luna",
+          "quantity": 1,
+          "unitPrice": 1899,
+          "subtotal": 1899
+        },
+        {
+          "productId": "22222222-2222-2222-2222-222222222223",
+          "productName": "Modular Neo",
+          "quantity": 1,
+          "unitPrice": 3199,
+          "subtotal": 3199
+        }
+      ],
+      "totalAmount": 7420.52
+    }
+  },
+  {
+    "timestamp": "2026-06-15T18:00:31.776Z",
+    "method": "POST",
+    "path": "/api/orders",
+    "url": "http://localhost:9090/api/orders",
+    "status": 201,
+    "ok": true,
+    "durationMs": 31,
+    "requestBody": {
+      "customerId": "6110442a-a3eb-4aa7-b9dd-0bcf7c460d8c",
+      "items": [
+        {
+          "productId": "22222222-2222-2222-2222-222222222224",
+          "quantity": 1,
+          "unitPrice": 1299
+        },
+        {
+          "productId": "22222222-2222-2222-2222-222222222222",
+          "quantity": 1,
+          "unitPrice": 1899
+        },
+        {
+          "productId": "22222222-2222-2222-2222-222222222223",
+          "quantity": 1,
+          "unitPrice": 3199
+        }
+      ]
+    },
+    "responseBody": {
+      "orderId": "9b6e3f32-f356-4bd2-8ca3-7b7ebacb6a8c",
+      "customerId": "6110442a-a3eb-4aa7-b9dd-0bcf7c460d8c",
+      "status": "Created",
+      "subtotal": 6397,
+      "tax": 1023.52,
+      "total": 7420.52,
+      "createdAt": "2026-06-15T18:00:31.756247Z",
+      "updatedAt": "2026-06-15T18:00:31.756247Z",
+      "items": [
+        {
+          "orderItemId": "485db8de-93d1-420f-8825-20b013486ce3",
+          "productId": "22222222-2222-2222-2222-222222222222",
+          "quantity": 1,
+          "unitPrice": 1899,
+          "subtotal": 1899
+        },
+        {
+          "orderItemId": "49225ba7-2acc-4f06-9336-8725561b347c",
+          "productId": "22222222-2222-2222-2222-222222222223",
+          "quantity": 1,
+          "unitPrice": 3199,
+          "subtotal": 3199
+        },
+        {
+          "orderItemId": "f34c6aa4-117c-4cd8-9745-43bca507b9fc",
+          "productId": "22222222-2222-2222-2222-222222222224",
+          "quantity": 1,
+          "unitPrice": 1299,
+          "subtotal": 1299
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-06-15T18:00:31.807Z",
+    "method": "POST",
+    "path": "/api/payments/authorize",
+    "url": "http://localhost:9090/api/payments/authorize",
+    "status": 200,
+    "ok": true,
+    "durationMs": 29,
+    "requestBody": {
+      "orderId": "9b6e3f32-f356-4bd2-8ca3-7b7ebacb6a8c",
+      "customerId": "6110442a-a3eb-4aa7-b9dd-0bcf7c460d8c",
+      "customerName": "Nelson gomez",
+      "customerEmail": "nelson@muebles.com",
+      "paymentMethod": "Tarjeta",
+      "items": [
+        {
+          "productId": "22222222-2222-2222-2222-222222222224",
+          "productName": "Escritorio Focus",
+          "quantity": 1,
+          "unitPrice": 1299
+        },
+        {
+          "productId": "22222222-2222-2222-2222-222222222222",
+          "productName": "Mesa Comedor Luna",
+          "quantity": 1,
+          "unitPrice": 1899
+        },
+        {
+          "productId": "22222222-2222-2222-2222-222222222223",
+          "productName": "Modular Neo",
+          "quantity": 1,
+          "unitPrice": 3199
+        }
+      ]
+    },
+    "responseBody": {
+      "paymentId": "690f0d10-9d54-4387-9a13-a0dc828cadcf",
+      "orderId": "9b6e3f32-f356-4bd2-8ca3-7b7ebacb6a8c",
+      "customerId": "6110442a-a3eb-4aa7-b9dd-0bcf7c460d8c",
+      "customerName": "Nelson gomez",
+      "customerEmail": "nelson@muebles.com",
+      "paymentMethod": "Tarjeta",
+      "status": "Authorized",
+      "subtotal": 6397,
+      "tax": 1023.52,
+      "total": 7420.52,
+      "createdAt": "2026-06-15T18:00:31.789547Z",
+      "invoice": {
+        "invoiceId": "ed4dde61-a12d-4a9d-84dd-6d48a8fb604b",
+        "paymentId": "690f0d10-9d54-4387-9a13-a0dc828cadcf",
+        "orderId": "9b6e3f32-f356-4bd2-8ca3-7b7ebacb6a8c",
+        "customerId": "6110442a-a3eb-4aa7-b9dd-0bcf7c460d8c",
+        "customerName": "Nelson gomez",
+        "customerEmail": "nelson@muebles.com",
+        "paymentMethod": "Tarjeta",
+        "invoiceNumber": "FAC-20260615-690F0D10",
+        "issuedAt": "2026-06-15T18:00:31.78878Z",
+        "subtotal": 6397,
+        "tax": 1023.52,
+        "total": 7420.52,
+        "items": [
+          {
+            "productName": "Mesa Comedor Luna",
+            "quantity": 1,
+            "unitPrice": 1899,
+            "subtotal": 1899
+          },
+          {
+            "productName": "Modular Neo",
+            "quantity": 1,
+            "unitPrice": 3199,
+            "subtotal": 3199
+          },
+          {
+            "productName": "Escritorio Focus",
+            "quantity": 1,
+            "unitPrice": 1299,
+            "subtotal": 1299
+          }
+        ]
+      }
+    }
+  },
+  {
+    "timestamp": "2026-06-15T18:00:31.822Z",
+    "method": "DELETE",
+    "path": "/api/cart/6110442a-a3eb-4aa7-b9dd-0bcf7c460d8c/items",
+    "url": "http://localhost:9090/api/cart/6110442a-a3eb-4aa7-b9dd-0bcf7c460d8c/items",
+    "status": 200,
+    "ok": true,
+    "durationMs": 14,
+    "requestBody": null,
+    "responseBody": {
+      "id": "e9a42a48-7f7d-4a5c-88db-e3cada462205",
+      "customerId": "6110442a-a3eb-4aa7-b9dd-0bcf7c460d8c",
+      "items": [],
+      "totalAmount": 0
+    }
+  },
+  {
+    "timestamp": "2026-06-15T18:00:31.838Z",
+    "method": "GET",
+    "path": "/api/orders",
+    "url": "http://localhost:9090/api/orders",
+    "status": 200,
+    "ok": true,
+    "durationMs": 15,
+    "requestBody": null,
+    "responseBody": [
+      {
+        "orderId": "9b6e3f32-f356-4bd2-8ca3-7b7ebacb6a8c",
+        "customerId": "6110442a-a3eb-4aa7-b9dd-0bcf7c460d8c",
+        "status": "Created",
+        "subtotal": 6397,
+        "tax": 1023.52,
+        "total": 7420.52,
+        "createdAt": "2026-06-15T18:00:31.756247Z",
+        "updatedAt": "2026-06-15T18:00:31.756247Z",
+        "items": [
+          {
+            "orderItemId": "485db8de-93d1-420f-8825-20b013486ce3",
+            "productId": "22222222-2222-2222-2222-222222222222",
+            "quantity": 1,
+            "unitPrice": 1899,
+            "subtotal": 1899
+          },
+          {
+            "orderItemId": "49225ba7-2acc-4f06-9336-8725561b347c",
+            "productId": "22222222-2222-2222-2222-222222222223",
+            "quantity": 1,
+            "unitPrice": 3199,
+            "subtotal": 3199
+          },
+          {
+            "orderItemId": "f34c6aa4-117c-4cd8-9745-43bca507b9fc",
+            "productId": "22222222-2222-2222-2222-222222222224",
+            "quantity": 1,
+            "unitPrice": 1299,
+            "subtotal": 1299
+          }
+        ]
+      },
+      {
+        "orderId": "1f04d385-df37-4c8e-af1b-fd6130f371ff",
+        "customerId": "6110442a-a3eb-4aa7-b9dd-0bcf7c460d8c",
+        "status": "Created",
+        "subtotal": 6397,
+        "tax": 1023.52,
+        "total": 7420.52,
+        "createdAt": "2026-06-15T17:49:45.438493Z",
+        "updatedAt": "2026-06-15T17:49:45.438493Z",
+        "items": [
+          {
+            "orderItemId": "415beb13-0720-4c4f-a2a9-6d95bf379499",
+            "productId": "22222222-2222-2222-2222-222222222224",
+            "quantity": 1,
+            "unitPrice": 1299,
+            "subtotal": 1299
+          },
+          {
+            "orderItemId": "9ec1c092-84fc-4bc3-a826-0b00f5c0d1e2",
+            "productId": "22222222-2222-2222-2222-222222222223",
+            "quantity": 1,
+            "unitPrice": 3199,
+            "subtotal": 3199
+          },
+          {
+            "orderItemId": "a666dd4a-8b04-43b0-bd92-094347c48da8",
+            "productId": "22222222-2222-2222-2222-222222222222",
+            "quantity": 1,
+            "unitPrice": 1899,
+            "subtotal": 1899
+          }
+        ]
+      },
+      {
+        "orderId": "ead76eae-751f-4f0b-97c9-bd624935c74a",
+        "customerId": "6110442a-a3eb-4aa7-b9dd-0bcf7c460d8c",
+        "status": "Created",
+        "subtotal": 3798,
+        "tax": 607.68,
+        "total": 4405.68,
+        "createdAt": "2026-06-15T17:08:36.896727Z",
+        "updatedAt": "2026-06-15T17:08:36.896727Z",
+        "items": [
+          {
+            "orderItemId": "54d806d7-7d9b-4521-93ee-798a4f7841b3",
+            "productId": "22222222-2222-2222-2222-222222222224",
+            "quantity": 1,
+            "unitPrice": 1299,
+            "subtotal": 1299
+          },
+          {
+            "orderItemId": "95253cb6-dd55-4d26-9819-a4111030f8b0",
+            "productId": "22222222-2222-2222-2222-222222222221",
+            "quantity": 1,
+            "unitPrice": 2499,
+            "subtotal": 2499
+          }
+        ]
+      },
+      {
+        "orderId": "c9732ea1-15ec-4936-b09b-e40a84269e1e",
+        "customerId": "6110442a-a3eb-4aa7-b9dd-0bcf7c460d8c",
+        "status": "Created",
+        "subtotal": 3198,
+        "tax": 511.68,
+        "total": 3709.68,
+        "createdAt": "2026-06-15T17:07:49.717851Z",
+        "updatedAt": "2026-06-15T17:07:49.717851Z",
+        "items": [
+          {
+            "orderItemId": "5978f63d-7b88-43b0-863c-23b1a1fc6756",
+            "productId": "22222222-2222-2222-2222-222222222224",
+            "quantity": 1,
+            "unitPrice": 1299,
+            "subtotal": 1299
+          },
+          {
+            "orderItemId": "8bfe5efc-a6eb-4df9-a5d1-f04c631355f0",
+            "productId": "22222222-2222-2222-2222-222222222222",
+            "quantity": 1,
+            "unitPrice": 1899,
+            "subtotal": 1899
+          }
+        ]
+      },
+      {
+        "orderId": "ad6ee339-da7b-4132-a444-ca6f37c6dbba",
+        "customerId": "6110442a-a3eb-4aa7-b9dd-0bcf7c460d8c",
+        "status": "Created",
+        "subtotal": 3198,
+        "tax": 511.68,
+        "total": 3709.68,
+        "createdAt": "2026-06-15T16:47:55.557985Z",
+        "updatedAt": "2026-06-15T16:47:55.557985Z",
+        "items": [
+          {
+            "orderItemId": "48854f53-b867-4dd5-b696-4a72d2cea977",
+            "productId": "22222222-2222-2222-2222-222222222222",
+            "quantity": 1,
+            "unitPrice": 1899,
+            "subtotal": 1899
+          },
+          {
+            "orderItemId": "caa18e10-dc74-4560-8d5a-55345965babe",
+            "productId": "22222222-2222-2222-2222-222222222224",
+            "quantity": 1,
+            "unitPrice": 1299,
+            "subtotal": 1299
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-06-15T18:00:31.858Z",
+    "method": "GET",
+    "path": "/api/payments",
+    "url": "http://localhost:9090/api/payments",
+    "status": 200,
+    "ok": true,
+    "durationMs": 19,
+    "requestBody": null,
+    "responseBody": [
+      {
+        "paymentId": "690f0d10-9d54-4387-9a13-a0dc828cadcf",
+        "orderId": "9b6e3f32-f356-4bd2-8ca3-7b7ebacb6a8c",
+        "customerId": "6110442a-a3eb-4aa7-b9dd-0bcf7c460d8c",
+        "customerName": "Nelson gomez",
+        "customerEmail": "nelson@muebles.com",
+        "paymentMethod": "Tarjeta",
+        "status": "Authorized",
+        "subtotal": 6397,
+        "tax": 1023.52,
+        "total": 7420.52,
+        "createdAt": "2026-06-15T18:00:31.789547Z",
+        "invoice": {
+          "invoiceId": "ed4dde61-a12d-4a9d-84dd-6d48a8fb604b",
+          "paymentId": "690f0d10-9d54-4387-9a13-a0dc828cadcf",
+          "orderId": "9b6e3f32-f356-4bd2-8ca3-7b7ebacb6a8c",
+          "customerId": "6110442a-a3eb-4aa7-b9dd-0bcf7c460d8c",
+          "customerName": "Nelson gomez",
+          "customerEmail": "nelson@muebles.com",
+          "paymentMethod": "Tarjeta",
+          "invoiceNumber": "FAC-20260615-690F0D10",
+          "issuedAt": "2026-06-15T18:00:31.78878Z",
+          "subtotal": 6397,
+          "tax": 1023.52,
+          "total": 7420.52,
+          "items": [
+            {
+              "productName": "Mesa Comedor Luna",
+              "quantity": 1,
+              "unitPrice": 1899,
+              "subtotal": 1899
+            },
+            {
+              "productName": "Modular Neo",
+              "quantity": 1,
+              "unitPrice": 3199,
+              "subtotal": 3199
+            },
+            {
+              "productName": "Escritorio Focus",
+              "quantity": 1,
+              "unitPrice": 1299,
+              "subtotal": 1299
+            }
+          ]
+        }
+      },
+      {
+        "paymentId": "dffab9dd-c1a4-408b-a0c0-170a210e4743",
+        "orderId": "1f04d385-df37-4c8e-af1b-fd6130f371ff",
+        "customerId": "6110442a-a3eb-4aa7-b9dd-0bcf7c460d8c",
+        "customerName": "Nelson gomez",
+        "customerEmail": "nelson@muebles.com",
+        "paymentMethod": "Tarjeta",
+        "status": "Authorized",
+        "subtotal": 6397,
+        "tax": 1023.52,
+        "total": 7420.52,
+        "createdAt": "2026-06-15T17:49:45.468425Z",
+        "invoice": {
+          "invoiceId": "be986863-d8e9-4783-96df-05694504c482",
+          "paymentId": "dffab9dd-c1a4-408b-a0c0-170a210e4743",
+          "orderId": "1f04d385-df37-4c8e-af1b-fd6130f371ff",
+          "customerId": "6110442a-a3eb-4aa7-b9dd-0bcf7c460d8c",
+          "customerName": "Nelson gomez",
+          "customerEmail": "nelson@muebles.com",
+          "paymentMethod": "Tarjeta",
+          "invoiceNumber": "FAC-20260615-DFFAB9DD",
+          "issuedAt": "2026-06-15T17:49:45.467517Z",
+          "subtotal": 6397,
+          "tax": 1023.52,
+          "total": 7420.52,
+          "items": [
+            {
+              "productName": "Modular Neo",
+              "quantity": 1,
+              "unitPrice": 3199,
+              "subtotal": 3199
+            },
+            {
+              "productName": "Mesa Comedor Luna",
+              "quantity": 1,
+              "unitPrice": 1899,
+              "subtotal": 1899
+            },
+            {
+              "productName": "Escritorio Focus",
+              "quantity": 1,
+              "unitPrice": 1299,
+              "subtotal": 1299
+            }
+          ]
+        }
+      },
+      {
+        "paymentId": "9392ceef-86b1-414a-aacf-a7c156a7b727",
+        "orderId": "ead76eae-751f-4f0b-97c9-bd624935c74a",
+        "customerId": "6110442a-a3eb-4aa7-b9dd-0bcf7c460d8c",
+        "customerName": "Nelson gomez",
+        "customerEmail": "nelson@muebles.com",
+        "paymentMethod": "Tarjeta",
+        "status": "Authorized",
+        "subtotal": 3798,
+        "tax": 607.68,
+        "total": 4405.68,
+        "createdAt": "2026-06-15T17:08:36.922394Z",
+        "invoice": {
+          "invoiceId": "59e2778b-d74c-436e-85a7-7de91d8c4e58",
+          "paymentId": "9392ceef-86b1-414a-aacf-a7c156a7b727",
+          "orderId": "ead76eae-751f-4f0b-97c9-bd624935c74a",
+          "customerId": "6110442a-a3eb-4aa7-b9dd-0bcf7c460d8c",
+          "customerName": "Nelson gomez",
+          "customerEmail": "nelson@muebles.com",
+          "paymentMethod": "Tarjeta",
+          "invoiceNumber": "FAC-20260615-9392CEEF",
+          "issuedAt": "2026-06-15T17:08:36.921612Z",
+          "subtotal": 3798,
+          "tax": 607.68,
+          "total": 4405.68,
+          "items": [
+            {
+              "productName": "Escritorio Focus",
+              "quantity": 1,
+              "unitPrice": 1299,
+              "subtotal": 1299
+            },
+            {
+              "productName": "Sofá Nórdico Oslo",
+              "quantity": 1,
+              "unitPrice": 2499,
+              "subtotal": 2499
+            }
+          ]
+        }
+      },
+      {
+        "paymentId": "7769a6be-a18e-4817-a5a4-e20a25fc3b22",
+        "orderId": "c9732ea1-15ec-4936-b09b-e40a84269e1e",
+        "customerId": "6110442a-a3eb-4aa7-b9dd-0bcf7c460d8c",
+        "customerName": "Nelson gomez",
+        "customerEmail": "nelson@muebles.com",
+        "paymentMethod": "Tarjeta",
+        "status": "Authorized",
+        "subtotal": 3198,
+        "tax": 511.68,
+        "total": 3709.68,
+        "createdAt": "2026-06-15T17:07:49.771826Z",
+        "invoice": {
+          "invoiceId": "658b88a7-8be9-45e3-aa47-167c988b967f",
+          "paymentId": "7769a6be-a18e-4817-a5a4-e20a25fc3b22",
+          "orderId": "c9732ea1-15ec-4936-b09b-e40a84269e1e",
+          "customerId": "6110442a-a3eb-4aa7-b9dd-0bcf7c460d8c",
+          "customerName": "Nelson gomez",
+          "customerEmail": "nelson@muebles.com",
+          "paymentMethod": "Tarjeta",
+          "invoiceNumber": "FAC-20260615-7769A6BE",
+          "issuedAt": "2026-06-15T17:07:49.762534Z",
+          "subtotal": 3198,
+          "tax": 511.68,
+          "total": 3709.68,
+          "items": [
+            {
+              "productName": "Mesa Comedor Luna",
+              "quantity": 1,
+              "unitPrice": 1899,
+              "subtotal": 1899
+            },
+            {
+              "productName": "Escritorio Focus",
+              "quantity": 1,
+              "unitPrice": 1299,
+              "subtotal": 1299
+            }
+          ]
+        }
+      },
+      {
+        "paymentId": "a7273b44-c609-41a8-8fc5-1d95c28e041a",
+        "orderId": "ad6ee339-da7b-4132-a444-ca6f37c6dbba",
+        "customerId": "6110442a-a3eb-4aa7-b9dd-0bcf7c460d8c",
+        "customerName": "Nelson gomez",
+        "customerEmail": "nelson@muebles.com",
+        "paymentMethod": "Tarjeta",
+        "status": "Authorized",
+        "subtotal": 3198,
+        "tax": 511.68,
+        "total": 3709.68,
+        "createdAt": "2026-06-15T16:47:55.646057Z",
+        "invoice": {
+          "invoiceId": "cc115043-b65c-46d0-94f6-25e08616db16",
+          "paymentId": "a7273b44-c609-41a8-8fc5-1d95c28e041a",
+          "orderId": "ad6ee339-da7b-4132-a444-ca6f37c6dbba",
+          "customerId": "6110442a-a3eb-4aa7-b9dd-0bcf7c460d8c",
+          "customerName": "Nelson gomez",
+          "customerEmail": "nelson@muebles.com",
+          "paymentMethod": "Tarjeta",
+          "invoiceNumber": "FAC-20260615-A7273B44",
+          "issuedAt": "2026-06-15T16:47:55.644798Z",
+          "subtotal": 3198,
+          "tax": 511.68,
+          "total": 3709.68,
+          "items": [
+            {
+              "productName": "Escritorio Focus",
+              "quantity": 1,
+              "unitPrice": 1299,
+              "subtotal": 1299
+            },
+            {
+              "productName": "Mesa Comedor Luna",
+              "quantity": 1,
+              "unitPrice": 1899,
+              "subtotal": 1899
+            }
+          ]
+        }
+      },
+      {
+        "paymentId": "bd942828-543e-43cc-a241-da40b3ec9d61",
+        "orderId": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+        "customerId": "cliente-demo-001",
+        "customerName": "Cliente Demo Uno",
+        "customerEmail": "cliente1@muebles.com",
+        "paymentMethod": "Tarjeta",
+        "status": "Authorized",
+        "subtotal": 4398,
+        "tax": 703.68,
+        "total": 5101.68,
+        "createdAt": "2026-06-15T13:49:52.157952Z",
+        "invoice": {
+          "invoiceId": "f103a078-00e4-49d5-9dd5-83b711fb6fee",
+          "paymentId": "bd942828-543e-43cc-a241-da40b3ec9d61",
+          "orderId": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+          "customerId": "cliente-demo-001",
+          "customerName": "Cliente Demo Uno",
+          "customerEmail": "cliente1@muebles.com",
+          "paymentMethod": "Tarjeta",
+          "invoiceNumber": "FAC-20260615-BD942828",
+          "issuedAt": "2026-06-15T13:49:52.132752Z",
+          "subtotal": 4398,
+          "tax": 703.68,
+          "total": 5101.68,
+          "items": [
+            {
+              "productName": "Sofá Nórdico Oslo",
+              "quantity": 1,
+              "unitPrice": 2499,
+              "subtotal": 2499
+            },
+            {
+              "productName": "Mesa Comedor Luna",
+              "quantity": 1,
+              "unitPrice": 1899,
+              "subtotal": 1899
+            }
+          ]
+        }
+      }
+    ]
+  }
+]

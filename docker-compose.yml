@@ -1,0 +1,169 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: proyecto-muebles-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: muebles_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - app-network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d muebles_db"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  authservice:
+    
+    build:
+      context: ./backend/services/AuthService
+      dockerfile: Dockerfile
+    container_name: authservice
+    environment:
+     ASPNETCORE_ENVIRONMENT: Development
+     DATABASE_URL: Host=proyecto-muebles-postgres;Port=5432;Database=muebles_db;Username=postgres;Password=postgres
+    ports:
+        - "8081:8080"
+    networks:
+        - app-network
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+  
+
+  cartservice:
+    build:
+      context: ./backend/services/CartService
+      dockerfile: Dockerfile
+    container_name: cartservice
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      DATABASE_URL: Host=proyecto-muebles-postgres;Port=5432;Database=muebles_db;Username=postgres;Password=postgres
+    ports:
+      - "8083:8080"
+    networks:
+      - app-network
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+  catalogservice:
+    build:
+      context: ./backend/services/CatalogService
+      dockerfile: Dockerfile
+    container_name: catalogservice
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      DATABASE_URL: Host=proyecto-muebles-postgres;Port=5432;Database=muebles_db;Username=postgres;Password=postgres
+    ports:
+      - "8082:8080"
+    networks:
+      - app-network
+    depends_on:
+      postgres:
+        condition: service_healthy 
+  
+  
+  orderservice:
+    build:
+      context: ./backend/services/OrderService
+      dockerfile: Dockerfile
+    container_name: orderservice
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      DATABASE_URL: Host=proyecto-muebles-postgres;Port=5432;Database=muebles_db;Username=postgres;Password=postgres
+    ports:
+      - "8084:8080"
+    networks:
+      - app-network
+    depends_on:
+      postgres:
+        condition: service_healthy
+        
+
+  paymentservice:
+    build:
+      context: ./backend/services/PaymentService
+      dockerfile: Dockerfile
+    container_name: paymentservice
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      DATABASE_URL: Host=proyecto-muebles-postgres;Port=5432;Database=muebles_db;Username=postgres;Password=postgres
+    ports:
+      - "8085:8080"
+    networks:
+      - app-network
+    depends_on:
+      postgres:
+        condition: service_healthy  
+
+  inventoryservice:
+    build:
+      context: ./backend/services/InventoryService
+      dockerfile: Dockerfile
+    container_name: inventoryservice
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      DATABASE_URL: Host=proyecto-muebles-postgres;Port=5432;Database=muebles_db;Username=postgres;Password=postgres
+    ports:
+      - "8086:8080"
+    networks:
+      - app-network
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+ 
+  gateway:
+    build:
+      context: ./backend/node-api-gateway
+      dockerfile: Dockerfile
+    container_name: proyecto-muebles-gateway
+    environment:
+      PORT: "9090"
+      AUTH_SERVICE_URL: http://authservice:8080
+      CATALOG_SERVICE_URL: http://catalogservice:8080
+      CART_SERVICE_URL: http://cartservice:8080
+      ORDER_SERVICE_URL: http://orderservice:8080
+      PAYMENT_SERVICE_URL: http://paymentservice:8080
+      INVENTORY_SERVICE_URL: http://inventoryservice:8080
+    ports:
+      - "9090:9090"
+    networks:
+      - app-network
+    depends_on:
+      - authservice
+      - catalogservice
+      - cartservice
+      - orderservice
+      - paymentservice
+      - inventoryservice
+
+ 
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: proyecto-muebles-frontend
+    ports:
+      - "5173:80"
+    depends_on:
+      - gateway
+    networks:
+      - app-network
+        
+networks:
+  app-network:
+    driver: bridge
+
+volumes:
+  postgres_data:
+
+  

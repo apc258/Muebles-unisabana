@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="b47ed7c6-808c-4738-94e9-18261f315813" name="LENOVO@DESKTOP-9QP3NGF 2026-06-15 12:08:30" runUser="DESKTOP-9QP3NGF\CodexSandboxOffline" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2026-06-15T12:08:30.7811850-05:00" queuing="2026-06-15T12:08:30.7811857-05:00" start="2026-06-15T12:08:29.1446665-05:00" finish="2026-06-15T12:08:31.0721856-05:00" />
+  <TestSettings name="default" id="925c54aa-eaa1-4640-8fa8-c1d16b7a0460">
+    <Deployment runDeploymentRoot="LENOVO_DESKTOP-9QP3NGF_2026-06-15_12_08_30" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="399f5e6b-f59c-4de6-903b-55f8542664dd" testId="ee2c36f5-fd5a-6b17-40ea-5d1b7dd29423" testName="Unitaria: precio cero o negativo retorna error de precio(price: -1)" computerName="DESKTOP-9QP3NGF" duration="00:00:00.0128339" startTime="2026-06-15T12:08:30.7103762-05:00" endTime="2026-06-15T12:08:30.7103764-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="399f5e6b-f59c-4de6-903b-55f8542664dd" />
+    <UnitTestResult executionId="b21fa2f3-309a-47a5-9cc3-225b7dc0c972" testId="14de0388-e335-1561-e412-f1686917d56c" testName="Unitaria: nombre vacio o en blanco retorna error de nombre(name: &quot;&quot;)" computerName="DESKTOP-9QP3NGF" duration="00:00:00.0001687" startTime="2026-06-15T12:08:30.7376938-05:00" endTime="2026-06-15T12:08:30.7376939-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b21fa2f3-309a-47a5-9cc3-225b7dc0c972" />
+    <UnitTestResult executionId="82b90052-bcf6-463e-a661-fccc3434ece4" testId="b20215e2-b064-b3fc-8bc5-9d11ee1544c2" testName="TDD 3 Refactor: errores se acumulan sin perder legibilidad" computerName="DESKTOP-9QP3NGF" duration="00:00:00.0004338" startTime="2026-06-15T12:08:30.7113421-05:00" endTime="2026-06-15T12:08:30.7113422-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="82b90052-bcf6-463e-a661-fccc3434ece4" />
+    <UnitTestResult executionId="60c35836-e432-410e-997e-a839641f0ce8" testId="10afac85-e352-3481-9b2c-ef0c7befd52b" testName="Unitaria: precio cero o negativo retorna error de precio(price: 0)" computerName="DESKTOP-9QP3NGF" duration="00:00:00.0003650" startTime="2026-06-15T12:08:30.7115741-05:00" endTime="2026-06-15T12:08:30.7115741-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="60c35836-e432-410e-997e-a839641f0ce8" />
+    <UnitTestResult executionId="cf7668ad-f72a-4a39-b57f-005eaaebabfc" testId="fd971bf2-0c9b-0f0a-62b9-4201d24de568" testName="Sistema: POST de validacion con precio cero equivale a HTTP 400" computerName="DESKTOP-9QP3NGF" duration="00:00:00.0128226" startTime="2026-06-15T12:08:30.7106370-05:00" endTime="2026-06-15T12:08:30.7106371-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cf7668ad-f72a-4a39-b57f-005eaaebabfc" />
+    <UnitTestResult executionId="3dcbde3d-178d-4858-b8b2-b16f2db903db" testId="b0ebbb7e-a9a3-7757-2a92-597d28a2bbf7" testName="TDD 1 Green: producto completo es valido" computerName="DESKTOP-9QP3NGF" duration="00:00:00.0085914" startTime="2026-06-15T12:08:30.6989489-05:00" endTime="2026-06-15T12:08:30.6989924-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3dcbde3d-178d-4858-b8b2-b16f2db903db" />
+    <UnitTestResult executionId="cb09545d-bfdb-491e-b771-ab63ebb9816d" testId="6f911721-1608-56ec-abc3-60016895f942" testName="TDD 2 Green: precio en limite cero es invalido" computerName="DESKTOP-9QP3NGF" duration="00:00:00.0001026" startTime="2026-06-15T12:08:30.7123691-05:00" endTime="2026-06-15T12:08:30.7123692-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cb09545d-bfdb-491e-b771-ab63ebb9816d" />
+    <UnitTestResult executionId="5d32f475-e9b6-410d-a826-20cc1584c176" testId="bde5a58d-8db4-5485-bc87-79b5cd68a952" testName="Unitaria: nombre vacio o en blanco retorna error de nombre(name: &quot; &quot;)" computerName="DESKTOP-9QP3NGF" duration="00:00:00.0002094" startTime="2026-06-15T12:08:30.7126688-05:00" endTime="2026-06-15T12:08:30.7126689-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5d32f475-e9b6-410d-a826-20cc1584c176" />
+    <UnitTestResult executionId="e69ee83e-7d9b-429c-9858-6cd8e9691b88" testId="d4f6f382-b1bb-1c00-18c6-27aef4894542" testName="Sistema: POST de validacion con producto valido equivale a HTTP 200" computerName="DESKTOP-9QP3NGF" duration="00:00:00.0014146" startTime="2026-06-15T12:08:30.7381484-05:00" endTime="2026-06-15T12:08:30.7381485-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e69ee83e-7d9b-429c-9858-6cd8e9691b88" />
+    <UnitTestResult executionId="a0e91e31-03c5-4aff-8022-d834992f77fa" testId="ced04ed3-0043-6b0a-1a36-4b93f5f4bbc3" testName="Integral: catalogo filtra precios invalidos y ordena productos por nombre" computerName="DESKTOP-9QP3NGF" duration="00:00:00.0127522" startTime="2026-06-15T12:08:30.7095238-05:00" endTime="2026-06-15T12:08:30.7095240-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a0e91e31-03c5-4aff-8022-d834992f77fa" />
+    <UnitTestResult executionId="099ef85c-5489-4c43-afb8-2ca8aefd6fdb" testId="2c1dc552-46f5-5c45-ac11-6cedc4724777" testName="Unitaria: producto completo retorna valido" computerName="DESKTOP-9QP3NGF" duration="00:00:00.0004707" startTime="2026-06-15T12:08:30.7383388-05:00" endTime="2026-06-15T12:08:30.7383389-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="099ef85c-5489-4c43-afb8-2ca8aefd6fdb" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="Unitaria: precio cero o negativo retorna error de precio(price: -1)" storage="c:\proyecto\proyecto-muebles4-main\backend\services\catalogservice\catalogservice.tests\bin\debug\net8.0\catalogservice.tests.dll" id="ee2c36f5-fd5a-6b17-40ea-5d1b7dd29423">
+      <Execution id="399f5e6b-f59c-4de6-903b-55f8542664dd" />
+      <TestMethod codeBase="C:\Proyecto\Proyecto-Muebles4-main\backend\services\CatalogService\CatalogService.Tests\bin\Debug\net8.0\CatalogService.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CatalogService.Tests.ProductValidationTests" name="Validate_WhenPriceIsZeroOrNegative_ReturnsPriceError" />
+    </UnitTest>
+    <UnitTest name="Unitaria: nombre vacio o en blanco retorna error de nombre(name: &quot; &quot;)" storage="c:\proyecto\proyecto-muebles4-main\backend\services\catalogservice\catalogservice.tests\bin\debug\net8.0\catalogservice.tests.dll" id="bde5a58d-8db4-5485-bc87-79b5cd68a952">
+      <Execution id="5d32f475-e9b6-410d-a826-20cc1584c176" />
+      <TestMethod codeBase="C:\Proyecto\Proyecto-Muebles4-main\backend\services\CatalogService\CatalogService.Tests\bin\Debug\net8.0\CatalogService.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CatalogService.Tests.ProductValidationTests" name="Validate_WhenNameIsBlank_ReturnsNameError" />
+    </UnitTest>
+    <UnitTest name="Sistema: POST de validacion con producto valido equivale a HTTP 200" storage="c:\proyecto\proyecto-muebles4-main\backend\services\catalogservice\catalogservice.tests\bin\debug\net8.0\catalogservice.tests.dll" id="d4f6f382-b1bb-1c00-18c6-27aef4894542">
+      <Execution id="e69ee83e-7d9b-429c-9858-6cd8e9691b88" />
+      <TestMethod codeBase="C:\Proyecto\Proyecto-Muebles4-main\backend\services\CatalogService\CatalogService.Tests\bin\Debug\net8.0\CatalogService.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CatalogService.Tests.CatalogEndpointSystemTests" name="ShouldReturnValidWhenPostRequest" />
+    </UnitTest>
+    <UnitTest name="Sistema: POST de validacion con precio cero equivale a HTTP 400" storage="c:\proyecto\proyecto-muebles4-main\backend\services\catalogservice\catalogservice.tests\bin\debug\net8.0\catalogservice.tests.dll" id="fd971bf2-0c9b-0f0a-62b9-4201d24de568">
+      <Execution id="cf7668ad-f72a-4a39-b57f-005eaaebabfc" />
+      <TestMethod codeBase="C:\Proyecto\Proyecto-Muebles4-main\backend\services\CatalogService\CatalogService.Tests\bin\Debug\net8.0\CatalogService.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CatalogService.Tests.CatalogEndpointSystemTests" name="ShouldReturnBadRequestWhenPostRequestHasBoundaryPriceZero" />
+    </UnitTest>
+    <UnitTest name="Integral: catalogo filtra precios invalidos y ordena productos por nombre" storage="c:\proyecto\proyecto-muebles4-main\backend\services\catalogservice\catalogservice.tests\bin\debug\net8.0\catalogservice.tests.dll" id="ced04ed3-0043-6b0a-1a36-4b93f5f4bbc3">
+      <Execution id="a0e91e31-03c5-4aff-8022-d834992f77fa" />
+      <TestMethod codeBase="C:\Proyecto\Proyecto-Muebles4-main\backend\services\CatalogService\CatalogService.Tests\bin\Debug\net8.0\CatalogService.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CatalogService.Tests.ProductCatalogServiceIntegrationTests" name="GetAvailableProducts_WhenRepositoryHasInvalidPrices_ReturnsOnlyPositivePricesOrderedByName" />
+    </UnitTest>
+    <UnitTest name="Unitaria: producto completo retorna valido" storage="c:\proyecto\proyecto-muebles4-main\backend\services\catalogservice\catalogservice.tests\bin\debug\net8.0\catalogservice.tests.dll" id="2c1dc552-46f5-5c45-ac11-6cedc4724777">
+      <Execution id="099ef85c-5489-4c43-afb8-2ca8aefd6fdb" />
+      <TestMethod codeBase="C:\Proyecto\Proyecto-Muebles4-main\backend\services\CatalogService\CatalogService.Tests\bin\Debug\net8.0\CatalogService.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CatalogService.Tests.ProductValidationTests" name="Validate_WhenProductIsComplete_ReturnsValid" />
+    </UnitTest>
+    <UnitTest name="TDD 2 Green: precio en limite cero es invalido" storage="c:\proyecto\proyecto-muebles4-main\backend\services\catalogservice\catalogservice.tests\bin\debug\net8.0\catalogservice.tests.dll" id="6f911721-1608-56ec-abc3-60016895f942">
+      <Execution id="cb09545d-bfdb-491e-b771-ab63ebb9816d" />
+      <TestMethod codeBase="C:\Proyecto\Proyecto-Muebles4-main\backend\services\CatalogService\CatalogService.Tests\bin\Debug\net8.0\CatalogService.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CatalogService.Tests.TddIterationEvidenceTests" name="ProductWithZeroPriceIsInvalid" />
+    </UnitTest>
+    <UnitTest name="Unitaria: nombre vacio o en blanco retorna error de nombre(name: &quot;&quot;)" storage="c:\proyecto\proyecto-muebles4-main\backend\services\catalogservice\catalogservice.tests\bin\debug\net8.0\catalogservice.tests.dll" id="14de0388-e335-1561-e412-f1686917d56c">
+      <Execution id="b21fa2f3-309a-47a5-9cc3-225b7dc0c972" />
+      <TestMethod codeBase="C:\Proyecto\Proyecto-Muebles4-main\backend\services\CatalogService\CatalogService.Tests\bin\Debug\net8.0\CatalogService.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CatalogService.Tests.ProductValidationTests" name="Validate_WhenNameIsBlank_ReturnsNameError" />
+    </UnitTest>
+    <UnitTest name="Unitaria: precio cero o negativo retorna error de precio(price: 0)" storage="c:\proyecto\proyecto-muebles4-main\backend\services\catalogservice\catalogservice.tests\bin\debug\net8.0\catalogservice.tests.dll" id="10afac85-e352-3481-9b2c-ef0c7befd52b">
+      <Execution id="60c35836-e432-410e-997e-a839641f0ce8" />
+      <TestMethod codeBase="C:\Proyecto\Proyecto-Muebles4-main\backend\services\CatalogService\CatalogService.Tests\bin\Debug\net8.0\CatalogService.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CatalogService.Tests.ProductValidationTests" name="Validate_WhenPriceIsZeroOrNegative_ReturnsPriceError" />
+    </UnitTest>
+    <UnitTest name="TDD 3 Refactor: errores se acumulan sin perder legibilidad" storage="c:\proyecto\proyecto-muebles4-main\backend\services\catalogservice\catalogservice.tests\bin\debug\net8.0\catalogservice.tests.dll" id="b20215e2-b064-b3fc-8bc5-9d11ee1544c2">
+      <Execution id="82b90052-bcf6-463e-a661-fccc3434ece4" />
+      <TestMethod codeBase="C:\Proyecto\Proyecto-Muebles4-main\backend\services\CatalogService\CatalogService.Tests\bin\Debug\net8.0\CatalogService.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CatalogService.Tests.TddIterationEvidenceTests" name="ProductValidationAccumulatesErrors" />
+    </UnitTest>
+    <UnitTest name="TDD 1 Green: producto completo es valido" storage="c:\proyecto\proyecto-muebles4-main\backend\services\catalogservice\catalogservice.tests\bin\debug\net8.0\catalogservice.tests.dll" id="b0ebbb7e-a9a3-7757-2a92-597d28a2bbf7">
+      <Execution id="3dcbde3d-178d-4858-b8b2-b16f2db903db" />
+      <TestMethod codeBase="C:\Proyecto\Proyecto-Muebles4-main\backend\services\CatalogService\CatalogService.Tests\bin\Debug\net8.0\CatalogService.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CatalogService.Tests.TddIterationEvidenceTests" name="ProductWithRequiredFieldsIsValid" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="ee2c36f5-fd5a-6b17-40ea-5d1b7dd29423" executionId="399f5e6b-f59c-4de6-903b-55f8542664dd" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="14de0388-e335-1561-e412-f1686917d56c" executionId="b21fa2f3-309a-47a5-9cc3-225b7dc0c972" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b20215e2-b064-b3fc-8bc5-9d11ee1544c2" executionId="82b90052-bcf6-463e-a661-fccc3434ece4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="10afac85-e352-3481-9b2c-ef0c7befd52b" executionId="60c35836-e432-410e-997e-a839641f0ce8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fd971bf2-0c9b-0f0a-62b9-4201d24de568" executionId="cf7668ad-f72a-4a39-b57f-005eaaebabfc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b0ebbb7e-a9a3-7757-2a92-597d28a2bbf7" executionId="3dcbde3d-178d-4858-b8b2-b16f2db903db" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6f911721-1608-56ec-abc3-60016895f942" executionId="cb09545d-bfdb-491e-b771-ab63ebb9816d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bde5a58d-8db4-5485-bc87-79b5cd68a952" executionId="5d32f475-e9b6-410d-a826-20cc1584c176" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d4f6f382-b1bb-1c00-18c6-27aef4894542" executionId="e69ee83e-7d9b-429c-9858-6cd8e9691b88" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ced04ed3-0043-6b0a-1a36-4b93f5f4bbc3" executionId="a0e91e31-03c5-4aff-8022-d834992f77fa" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2c1dc552-46f5-5c45-ac11-6cedc4724777" executionId="099ef85c-5489-4c43-afb8-2ca8aefd6fdb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Resultados sin formato de lista" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="Todos los resultados cargados" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="11" executed="11" passed="11" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.8.2+699d445a1a (64-bit .NET 8.0.28)&#xD;
+[xUnit.net 00:00:00.08]   Discovering: CatalogService.Tests&#xD;
+[xUnit.net 00:00:00.13]   Discovered:  CatalogService.Tests&#xD;
+[xUnit.net 00:00:00.13]   Starting:    CatalogService.Tests&#xD;
+[xUnit.net 00:00:00.24]   Finished:    CatalogService.Tests&#xD;
+</StdOut>
+    </Output>
+    <CollectorDataEntries>
+      <Collector agentName="DESKTOP-9QP3NGF" uri="datacollector://microsoft/CoverletCodeCoverage/1.0" collectorDisplayName="XPlat code coverage">
+        <UriAttachments>
+          <UriAttachment>
+            <A href="DESKTOP-9QP3NGF\coverage.cobertura.xml"></A>
+          </UriAttachment>
+        </UriAttachments>
+      </Collector>
+    </CollectorDataEntries>
+  </ResultSummary>
+</TestRun>
