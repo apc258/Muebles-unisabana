@@ -1,15 +1,21 @@
-# Stage 1: Build con Maven y Java 17 (Temurin)
-# FROM maven:3.8.5-eclipse-temurin-17 AS build
-FROM maven:3.8.4-openjdk-17 AS build
-WORKDIR /app
-# COPY pom.xml .
-COPY frontend/src ./src
-RUN mvn clean package -DskipTests
+# Etapa de construcción
+FROM node:20-alpine AS build
 
-
-FROM eclipse-temurin:17-jre-alpine
 WORKDIR /app
 
-COPY --from=build /app/target/*.jar app.jar
-EXPOSE 8080
-ENTRYPOINT ["java", "-jar", "app.jar"]
+COPY package*.json ./
+
+RUN npm install
+
+COPY . .
+
+RUN npm run build
+
+# Etapa de producción
+FROM nginx:alpine
+
+COPY --from=build /app/dist /usr/share/nginx/html
+
+EXPOSE 80
+
+CMD ["nginx", "-g", "daemon off;"]
