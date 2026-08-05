@@ -6,15 +6,27 @@ const port = Number(process.env.PORT || 9090);
 
 const services = {
   auth: process.env.AUTH_SERVICE_URL || 'http://authservice:8080',
-  catalog: process.env.CATALOG_SERVICE_URL || 'http://localhost:8080', // AJUSTE: Apuntando a tu backend C#
+  catalog: process.env.CATALOG_SERVICE_URL || 'http://catalogservice:8080',
   cart: process.env.CART_SERVICE_URL || 'http://cartservice:8080',
   orders: process.env.ORDER_SERVICE_URL || 'http://orderservice:8080',
   payments: process.env.PAYMENT_SERVICE_URL || 'http://paymentservice:8080',
   inventory: process.env.INVENTORY_SERVICE_URL || 'http://inventoryservice:8080'
 };
 
+const allowedOrigins = (process.env.CORS_ORIGIN || 'http://localhost:5173')
+  .split(',')
+  .map((origin) => origin.trim())
+  .filter(Boolean);
+
 app.use(cors({
-  origin: 'http://localhost:5173',
+  origin: (origin, callback) => {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+      return;
+    }
+
+    callback(new Error(`CORS blocked for origin: ${origin}`));
+  },
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization', 'X-User-Id', 'X-User-Role'],
   credentials: true

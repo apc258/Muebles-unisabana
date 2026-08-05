@@ -1,4 +1,7 @@
-const API_BASE_URL = import.meta.env.VITE_API_URL ?? 'http://localhost:9090';
+const API_BASE_URL = import.meta.env.VITE_API_URL?.trim()
+  || (import.meta.env.DEV
+    ? 'http://localhost:9090'
+    : (typeof window !== 'undefined' ? window.location.origin : 'http://localhost:9090'));
 const E2E_CAPTURE_KEY = 'muebles.e2e.capture.enabled';
 const E2E_CAPTURE_ENTRIES_KEY = 'muebles.e2e.capture.entries';
 const E2E_CAPTURE_REPORT_KEY = 'muebles.e2e.capture.report';
