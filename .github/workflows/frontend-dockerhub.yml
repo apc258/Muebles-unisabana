@@ -67,4 +67,3 @@ jobs:
         run: |
           curl -fsS -X POST "$RENDER_FRONTEND_DEPLOY_HOOK_URL"
           echo "Render deploy hook for frontend triggered."
-
