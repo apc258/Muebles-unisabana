@@ -117,4 +117,3 @@ jobs:
           done
 
           echo "Render deploy hooks for backend triggered."
-
