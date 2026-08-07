@@ -1,4 +1,4 @@
-# Proyecto Muebles Modernos
+# Proyecto Muebles Modernos 
 
 Sistema web para una tienda de muebles modernos. El proyecto permite consultar catalogo, iniciar sesion, registrar usuarios, administrar inventario, agregar productos al carrito, crear ordenes, autorizar pagos y generar factura.
 
