@@ -55,11 +55,6 @@ jobs:
           cache-from: type=gha
           cache-to: type=gha,mode=max
 
-  notify-render:
-    needs: build-and-push
-    if: ${{ needs.build-and-push.result == 'success' && secrets.RENDER_FRONTEND_DEPLOY_HOOK_URL != '' }}
-    runs-on: ubuntu-latest
-
     steps:
       - name: Trigger Render deploy (frontend)
         env:
